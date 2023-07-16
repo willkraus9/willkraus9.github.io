@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+    \textbf{\scshape Will Kraus} \\ \vspace{1pt}
+    \small (412-552-4761) $|$ \href{mailto:will.kraus9@gmail.com}{\underline{will.kraus9@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/willkraus9}{\underline{linkedin.com/in/willkraus9}} $|$
+    \href{https://github.com/willkraus9}{\underline{https://github.com/willkraus9}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {MS in Mechanical Engineering, Focus in Robotics and Control Systems}{August 2023 -  May 2025 (expected)}
+    \resumeSubheading
+      {Pennsylvania State University}{State College, PA}
+      {BS in Mechanical Engineering, Minor in Engineering Leadership}{August 2019 - May 2023}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Researcher}{August 2022 - May 2023}
+      {Networked Robotic Systems Lab}{State College, PA}
+      \resumeItemListStart
+        \resumeItem{Worked with grad students to integrate path planning research in MATLAB to mobile robot and Vicon motion capture setup}
+        \resumeItem{Led ongoing development of autonomous mobile robots reprogrammed in C++ and MATLAB for current projects}
+        \resumeItem{Presented refurbished RC chassis-based robot fleet to professors to use for further cooperative research and lab coursework opportunities}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Vibration Analyst Intern}{May 2022 - August 2022}
+      {KCF Technologies}{State College, PA}
+      \resumeItemListStart
+        \resumeItem{Analyzed vibration data to detect root causes of equipment failures in industrial machinery}
+        \resumeItem{Communicated with clients to ensure proper sensor readings in management system}
+        \resumeItem{Presented research on integrating FANUC robots in Ford manufacturing plant to machine health platform by timing vibration sensor collection windows to robot management system and robot G-code}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Surveillance of Autonomous Vehicle Test Track} $|$ \emph{Python, OpenCV, DJI SDK}}{January 2023 - May 2023}
+          \resumeItemListStart
+            \resumeItem{Led students from Chalmers University and Penn State to program a DJI drone in Python to detect fence breaches at AstaZero autonomous vehicle research facility in Sweden}
+            \resumeItem{Assisted in the development of key software deliverables: view fence from a top-down perspective, identify fence breaches from animals or intruders, and store video feed for further review.}
+            \resumeItem{Presented video of operating drone and research poster to industry judges that saves employees 2 hours/month and hiking 10 kilometers}
+            \resumeItem{Awarded Lockheed Martin First Place for Best Project among hundreds of senior Penn State teams}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{Penn State Robotics Club President} $|$ \emph{Robot Manufacturing, Educational Outreach}}{August 2021 - May 2023}
+          \resumeItemListStart
+            \resumeItem{Founded humanoid dancing robot project using a VR headset and ROS2 for pediatric cancer charity event}
+            \resumeItem{Collaborated with robotics-related club leaders and Director of Facilities to inform current renovations for club use}
+            \resumeItem{Expanded club from 6 members over pandemic to 60 members working on semester-long Arduino competitions}
+          \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{TonyPi (Humanoid Robotics) Elective} $|$ \emph{Python, OpenCV, Webots}}{January 2023 - May 2023}  
+         \resumeItemListStart
+             \resumeItem{Programmed Raspberry Pi-based humanoid robot in Python to complete objectives such as dancing, unstable exercise movements, and face tracking}
+            \resumeItem{Planned robot movements in Webots and uploaded to physical robot to compare results in stability analysis}
+        \resumeItemListEnd
+          
+    \resumeProjectHeading
+        {\textbf{ACRP National Design Competition} $|$ \emph{Device Prototyping, Technical Writing}}{January 2020 - May 2020}  
+         \resumeItemListStart
+             \resumeItem{Developed a Bluetooth device to help seniors at large airport navigate terminals with analog display and inputs}
+            \resumeItem{Led team to conduct field research at a local airport terminal using Human-Centered Design principles}
+            \resumeItem{Awarded Second Place nationwide in Management and Planning category for research paper, commercial video, and preliminary ROI analysis}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: ROS2, Python (Matplotlib, Numpy, OpenCV), MATLAB/Simulink, Webots, C++ (Arduino), Linux}\\
+     \textbf{Prototyping}{: 3D Modeling (Fusion360, SolidWorks, Blender, Abaqus), 3D Printers, Mills, Lathes, Waterjet, Soldering} \\
+    \textbf{Organization Analysis}{: Lean Sigma (Yellow Belt), Human-Centered Design, Microsoft Power BI}\\
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}

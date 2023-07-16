@@ -1,6 +1,6 @@
 ---
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
+title: Engineering Portfolio
+subtitle: Projects completed / in progress from undergrad and beyond
 ---
 
 {: .box-success}

@@ -22,7 +22,7 @@ author: Will Kraus
 navbar-links:
   About Me: "aboutme"
   Projects: 
-  - Resume / CV: "main.tex"
+  - Resume / CV: "https://github.com/willkraus9/willkraus9.github.io/blob/master/Will_Kraus__Resume__SU23_%20(1).pdf"
   - Portfolio: 
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"

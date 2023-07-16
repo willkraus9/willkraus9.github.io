@@ -23,10 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Projects: 
   - Resume / CV: "https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/Will_Kraus__Resume__SU23_.pdf"
-  - Portfolio: 
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  - Portfolio: "portfolio"
 
 ################
 # --- Logo --- #

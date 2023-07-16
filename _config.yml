@@ -21,10 +21,10 @@ author: Will Kraus
 
 navbar-links:
   About Me: "aboutme"
+  Projects: 
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -56,7 +56,7 @@ social-network-links:
   github: willkraus9
 #  medium: yourname
 #  reddit: yourname
-  linkedin: https://www.linkedin.com/in/willkraus9/
+  linkedin: willkraus9
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78

@@ -26,7 +26,7 @@ Center image:
 
 
 
-![ACRP](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/acrp_link.png)
+![ACRP]({{'https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/acrp_link.png' | relative_url}})
 ![AstaZero](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/astazero_link.png)
 ![NRSL](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/nrsl_link.png)
 ![THON](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/thon_bot_link2.png)

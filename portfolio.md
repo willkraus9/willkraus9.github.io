@@ -10,10 +10,11 @@ subtitle: Projects from undergrad and beyond
 
 During my undergraduate experience at Penn State University, I became the lead undergraduate researcher for the Networked Robotic Systems Lab (NRSL). The project that I spent most of my time with used A* and path planning algorithms in MATLAB and C++ to navigate an unfamiliar area. This robot, which I helped prototype for lab demonstration, would connect to a Vicon motion capture system to record its position and determine possible trajectories.
 
-![Jake Bot Diagram](/assets/png/JakeBot.png)
+![Jake Bot Diagram](/assets/png/JakeBot.png){: .mx-auto.d-block :}
 
 The lab became unused during the pandemic, so my day-to-day duties also included developing a fleet of mobile robots that can be used in a variety of situations. These robots could be programmed via Arduino to run control or path planning algorithms in a graduate student lab setting or be upgraded with Jetson boards for research use.
 
+![Kraus Researching](/assets//undergrad_research.png){: .mx-auto.d-block :}
 
 
 ## Autonomous Surveillance of Restricted Area Using Drones {#drone}
@@ -36,7 +37,7 @@ As a way to build advanced experiences for the Robotics Club, I created the THON
 
 As the founder of the project, I divided the project into 3 teams: Hardware, Electronics, and Simulation/Control. On the Hardware team, I oversaw a team of interdisciplinary undergraduate engineers that designed, 3D printed, and assembled plastic and metal components of THON Bot.   
 
-![THON Bot Diagram](/assets/png/thon_bot_diagram.png)
+![THON Bot Diagram](/assets/png/thon_bot_diagram.png){: .mx-auto.d-block :}
 
 In the future, THON Bot has a variety of uses outside of the THON dance marathon. The project has functions and hardware that would benefit Human-Robot Interaction research or answer ethical questions about the nature of robots in society.
 

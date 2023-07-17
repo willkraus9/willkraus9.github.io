@@ -1,6 +1,6 @@
 ---
 title: Engineering Portfolio
-subtitle: Projects completed / in progress from undergrad and beyond 
+subtitle: Projects from undergrad and beyond 
 ---
 
 [Project Image Links]{#Project Images}

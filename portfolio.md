@@ -24,14 +24,14 @@ Here's a table:
 Center image:
 ![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
 
-Image test:1
+Image test:2
 
 
-![ACRP](/acrp_link.png)
-![AstaZero](/png/astazero_link.png)
+![ACRP](/assets/png/acrp_link.png)
+![AstaZero](/assets/png/astazero_link.png)
 ![NRSL](/assets/png/nrsl_link.png)
-![THON](/master/assets/png/thon_bot_link2.png)
-![TonyPi](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/tonypi_link.png)
+![THON](/assets/png/thon_bot_link2.png)
+[![TonyPi](/assets/png/tonypi_link.png)](https://www.wikipedia.org/)
 
 Here's a code chunk:
 

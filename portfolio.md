@@ -3,8 +3,7 @@ title: Engineering Portfolio
 subtitle: Projects from undergrad and beyond 
 ---
 | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | 
-|[![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} |
-| [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} |
+|[![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} |
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
 
@@ -15,6 +14,7 @@ During my undergraduate experience at Penn State University, I became the lead u
 The lab became unused during the pandemic, so my day-to-day duties also included developing a fleet of mobile robots that can be used in a variety of situations. These robots could be programmed via Arduino to run control or path planning algorithms in a graduate student lab setting or be upgraded with Jetson boards for research use.
 
 ![Kraus Researching](/assets//undergrad_research.png){: .mx-auto.d-block :}
+
 
 
 ## Autonomous Surveillance of Restricted Area Using Drones {#drone}
@@ -40,16 +40,6 @@ As the founder of the project, I divided the project into 3 teams: Hardware, Ele
 ![THON Bot Diagram](/assets/png/thon_bot_diagram.png){: .mx-auto.d-block :}
 
 In the future, THON Bot has a variety of uses outside of the THON dance marathon. The project has functions and hardware that would benefit Human-Robot Interaction research or answer ethical questions about the nature of robots in society.
-
-
-
-## Tony Pi Humanoid Robot Projects {#tonypi}
-- class outline (what it is, special topics)
-- program robot in Python to dance + exercise - featured (WORKING + FILES)
-- PID control + openCV (WORKING + FILES)
-- .motion file in Webots (FILES)
-- stability analysis write up (last one?)
-
 
 
 

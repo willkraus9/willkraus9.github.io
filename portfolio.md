@@ -23,7 +23,9 @@ A line detection software was created using Python and the openCV programming li
 
 The drone flight program is built using the DSS (Drone Security System) library and Python code. Perimeter fence GPS coordinates are recorded into the system and the drone flies to a certain altitude to detect the fence, reaches all GPS locations, and lands safely.
 
-Overall, the project was chosen for Best Project Award out of nearly one hundred senior student teams at Penn State University. 
+Overall, the project was chosen for Best Project Award out of nearly one hundred senior student teams at Penn State University. The project was tested at AstaZero's track in Sweden successfully and executed the mission with assistance from the Chalmers University teammates. 
+
+Link to Poster](/assets/
 
 [Link to Video](https://www.youtube.com/watch?v=jhPUywB5TlE)
 

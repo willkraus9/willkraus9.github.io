@@ -8,6 +8,11 @@ subtitle: Projects from undergrad and beyond
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
 
+During my undergraduate experience at Penn State University, I became the lead undergraduate researcher for the Networked Robotic Systems Lab (NRSL). The project that I spent most of my time with used A* and path planning algorithms in MATLAB and C++ to navigate an unfamiliar area. This robot, which I helped prototype for lab demonstration, would connect to a Vicon motion capture system to record its position and determine possible trajectories.
+
+![Jake Bot Diagram](/assets/png/JakeBot.png)
+
+The lab became unused during the pandemic, so my day-to-day duties also included developing a fleet of mobile robots that can be used in a variety of situations. These robots could be programmed via Arduino to run control or path planning algorithms in a graduate student lab setting or be upgraded with Jetson boards for research use.
 
 
 
@@ -38,6 +43,12 @@ In the future, THON Bot has a variety of uses outside of the THON dance marathon
 
 
 ## Tony Pi Humanoid Robot Projects {#tonypi}
+- class outline (what it is, special topics)
+- program robot in Python to dance + exercise - featured (WORKING + FILES)
+- PID control + openCV (WORKING + FILES)
+- .motion file in Webots (FILES)
+- stability analysis write up (last one?)
+
 
 
 

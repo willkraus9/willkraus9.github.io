@@ -24,14 +24,15 @@ Here's a table:
 Center image:
 ![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
 
-Image test:2
+Image test:4
 
+| Number | Next number | Previous number |
+| :------ |:--- | :--- |
+| ![ACRP](/assets/png/acrp_link.png) | Six | Four |
+| Ten | ![AstaZero](/assets/png/astazero_link.png) | Nine |
+| ![NRSL](/assets/png/nrsl_link.png) | ![THON](/assets/png/thon_bot_link2.png) | [![TonyPi](/assets/png/tonypi_link.png)](https://www.wikipedia.org/) |
+| Two | Three | One |
 
-![ACRP](/assets/png/acrp_link.png)
-![AstaZero](/assets/png/astazero_link.png)
-![NRSL](/assets/png/nrsl_link.png)
-![THON](/assets/png/thon_bot_link2.png)
-[![TonyPi](/assets/png/tonypi_link.png)](https://www.wikipedia.org/)
 
 Here's a code chunk:
 

@@ -2,11 +2,9 @@
 title: Engineering Portfolio
 subtitle: Projects from undergrad and beyond 
 ---
-| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} |
-| [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} 
-| [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} 
-| [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} |
-| [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} 
+| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | 
+|[![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} |
+| [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} |
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
 
@@ -29,9 +27,9 @@ Overall, the project was chosen for Best Project Award out of nearly one hundred
 
 
 ## THON Bot: 5 Foot Tall Dancing Humanoid Robot {#THON}
-As a way to build advanced experiences for the Robotics Club, I created the THON Bot project. THON Bot is a 5 foot humanoid dancing robot that will interact with attendees for 48 hours continuously at THON  2025. This is one of the most complicated and rewarding robotics projects that I have experienced at Penn State University; there are electronics and controls problems that I would not have encountered as an undergraduate in Mechanical Engineering.
+As a way to build advanced experiences for the Robotics Club, I created the THON Bot project. THON Bot is a 5 foot humanoid dancing robot that will interact with attendees for 48 hours continuously at THON 2025. This is one of the most complicated and rewarding robotics projects that I have experienced at Penn State University; there are electronics and controls problems that I would not have encountered as an undergraduate in Mechanical Engineering.
 
-As the founder of the project, I divided the project into 3 teams: Hardware, Electronics, and Simulation/Control. On the Hardware team, I oversee a team of interdisciplinary undergraduate engineers that design, 3D print, and assemble the plastic and metal components of THON Bot.   
+As the founder of the project, I divided the project into 3 teams: Hardware, Electronics, and Simulation/Control. On the Hardware team, I oversaw a team of interdisciplinary undergraduate engineers that designed, 3D printed, and assembled plastic and metal components of THON Bot.   
 
 ![THON Bot Diagram](/assets/png/thon_bot_diagram.png)
 

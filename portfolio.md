@@ -26,11 +26,11 @@ Center image:
 
 
 
-![ACRP](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/acrp_link.png)
-![AstaZero](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/astazero_link.png)
-![NRSL](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/nrsl_link.png)
-![THON](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/thon_bot_link2.png)
-![TonyPi](tonypi_link.png)
+![ACRP](/acrp_link.png)
+![AstaZero](/png/astazero_link.png)
+![NRSL](/assets/png/nrsl_link.png)
+![THON](/master/assets/png/thon_bot_link2.png)
+![TonyPi](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/tonypi_link.png)
 
 Here's a code chunk:
 

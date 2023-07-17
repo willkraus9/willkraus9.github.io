@@ -3,12 +3,9 @@ title: Engineering Portfolio
 subtitle: Projects completed / in progress from undergrad and beyond
 ---
 
-{: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
-
 [# Project Image Links]{#Project Images}
 
-Image test: 12 (fix internal links all again)
+Image test: 13 (THON Bot Text)
 
 | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} |
 | :------ |:--- | :--- |
@@ -32,55 +29,14 @@ Our group decided to investigate an aspect of an airport that we could directly 
 [Back to Top] (#Project Images)
 
 ## THON Bot: 5 Foot Tall Dancing Humanoid Robot {#THON}
+As a way to build advanced experiences for the Robotics Club, I created the THON Bot project. THON Bot is a 5 foot humanoid dancing robot that will interact with attendees for 48 hours continuously at THON  2025. This is one of the most complicated and rewarding robotics projects that I have experienced at Penn State University; there are electronics and controls problems that I would not have encountered as an undergraduate in Mechanical Engineering.
+
+As the founder of the project, I divided the project into 3 teams: Hardware, Electronics, and Simulation/Control. On the Hardware team, I oversee a team of interdisciplinary undergraduate engineers that design, 3D print, and assemble the plastic and metal components of THON Bot.   
+
+![THON Bot Diagram](/assets/png/thon_bot_diagram.png)
+
+In the future, THON Bot has a variety of uses outside of the THON dance marathon. The project has functions and hardware that would benefit Human-Robot Interaction research or answer ethical questions about the nature of robots in society.
 [Back to Top] (#Project Images)
 
 ## Tony Pi Humanoid Robot Projects {#tonypi}
 [Back to Top] (#Project Images)
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-[![TonyPi](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/tonypi_link.png)](https://www.wikipedia.org/)
-
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
-

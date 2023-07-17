@@ -4,6 +4,7 @@ subtitle: Click on an image to get started.
 ---
 | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | 
 |[![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} |
+|[![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :}
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
 
@@ -51,3 +52,12 @@ Our group decided to investigate an aspect of an airport that we could directly 
 [Link to Commercial Video](https://www.youtube.com/watch?v=CzLzuzDaduI) 
 
 [Link to Report](https://williamkraus.files.wordpress.com/2021/10/l.e.n.d.-acrp-challenge-report.pdf)
+
+
+## Tony Pi Humanoid Robot Projects {#tonypi}
+- class outline (what it is, special topics)
+- program robot in Python to dance + exercise - featured (part of dance) (video working + FILES)
+- PID control + openCV (video working + FILES)
+- .motion file in Webots (FILES)
+- stability analysis write up (last one?)
+

@@ -1,11 +1,11 @@
 ---
 title: Engineering Portfolio
-subtitle: Projects completed / in progress from undergrad and beyond
+subtitle: Projects completed / in progress from undergrad and beyond 
 ---
 
 [Project Image Links]{#Project Images}
 
-Image test: 14 (THON Bot Text)
+Image test: 15 (run error after THON Bot Text)
 
 | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} |
 | :------ |:--- | :--- |

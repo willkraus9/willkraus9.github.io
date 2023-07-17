@@ -58,7 +58,7 @@ Our group decided to investigate an aspect of an airport that we could directly 
 During my senior year, I had the opportunity to enroll in the recently developed humanoid robotics class at Penn State. Because of the freeform nature of the course, I learned a variety of software related to devleoping code for a TonyPi humanoid robot. Code was written in Python and sent to an onboard Raspberry Pi to make the robot perform a variety of tasks such as dancing, performing exercises, and stacking wooden blocks. As part of the course, I performed a stabililty analysis based on accelerometer and presssure data to determine which movements were more stable than others and what factors play into stable bipedal motion.
 
 
-[Link to Dance](/assets/mov/TonyPi_Dance.mov)
+[Link to Dance](/assets/mov/TonyPi_Dance.mp4)
 
 The class also taught OpenCV omputer vision basics and development using the robot's onboard camera system. For one of my projects, I tuned a PID controller to control the servo motors on the camera to track the centermost face.
 

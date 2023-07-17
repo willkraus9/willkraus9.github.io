@@ -3,8 +3,6 @@ title: Engineering Portfolio
 subtitle: Projects from undergrad and beyond 
 ---
 
-Image test: 16 (take out links back to top)
-
 | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} |
 | :------ |:--- | :--- |
 | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} |
@@ -19,6 +17,15 @@ Our group decided to investigate an aspect of an airport that we could directly 
 [Link to Report](https://williamkraus.files.wordpress.com/2021/10/l.e.n.d.-acrp-challenge-report.pdf)
 
 ## Autonomous Surveillance of Restricted Area Using Drones {#drone}
+AstaZero AB has an autonomous vehicle testing and research facility in a heavily wooded area in Sweden. This facility is surrounded by an approximately 10 kilometer fence to prevent moose, deer, and other animals from interrupting outdoor experiments. The team had the opportunity to automate this process using existing drone hardware at AstaZero.
+
+A line detection software was created using Python and the openCV programming library. The code isolates the fence in the captured drone video and flags any gaps in where the fence appears.
+
+The drone flight program is built using the DSS (Drone Security System) library and Python code. Perimeter fence GPS coordinates are recorded into the system and the drone flies to a certain altitude to detect the fence, reaches all GPS locations, and lands safely.
+
+Overall, the project was chosen for Best Project Award out of nearly one hundred senior student teams at Penn State University. 
+
+[Link to Video](https://www.youtube.com/watch?v=jhPUywB5TlE)
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
 

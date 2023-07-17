@@ -49,15 +49,17 @@ The Airport Cooperative Research Program is a national competition for universit
 
 Our group decided to investigate an aspect of an airport that we could directly study and improve: the terminal experience for elderly passengers. Through family interviews, field research at a local airport, and copious research on the elderly population in America, we decided to create a Bluetooth-based device that directs passengers to bathrooms, food courts, gates, and other services. Because of our efforts, we were awarded 2nd Place nationally in the Airport Management and Planning category.
 
-[Link to Commercial Video](https://www.youtube.com/watch?v=CzLzuzDaduI) 
+[Link to Video](https://www.youtube.com/watch?v=CzLzuzDaduI) 
 
 [Link to Report](https://williamkraus.files.wordpress.com/2021/10/l.e.n.d.-acrp-challenge-report.pdf)
 
 
 ## Tony Pi Humanoid Robot Projects {#tonypi}
-- class outline (what it is, special topics)
-- program robot in Python to dance + exercise - featured (part of dance) (video working + FILES)
-- PID control + openCV (video working + FILES)
-- .motion file in Webots (FILES)
-- stability analysis write up (last one?)
+During my senior year, I had the opportunity to enroll in the recently developed humanoid robotics class at Penn State. Because of the freeform nature of the course, I learned a variety of software related to devleoping code for a TonyPi humanoid robot. Code was written in Python and sent to an onboard Raspberry Pi to make the robot perform a variety of tasks such as dancing, performing exercises, and stacking wooden blocks. As part of the course, I performed a stabililty analysis based on accelerometer and presssure data to determine which movements were more stable than others and what factors play into stable bipedal motion.
 
+
+[Link to Dance](/assets/mov/TonyPi_Dance.mov)
+
+The class also taught OpenCV omputer vision basics and development using the robot's onboard camera system. For one of my projects, I tuned a PID controller to control the servo motors on the camera to track the centermost face.
+
+[Link to Track](/assets/mov/TonyPi_Track.mp4)

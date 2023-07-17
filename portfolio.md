@@ -8,28 +8,31 @@ This is a demo post to show you how to write blog posts with markdown.  I strong
 
 **Here is some bold text**
 
-## Here is a secondary heading
+## Project Image Links {#start}
 
 [This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
 
-Image test: 8 (spacing + doc)
+Image test: 9 (reformat table + internal links)
+## Project Image Links {#start}
 
-| Number | Next number | Previous number |
+| [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} | ![AstaZero](/assets/png/astazero_link.png){: .mx-auto.d-block :} | ![NRSL](/assets/png/nrsl_link.png){: .mx-auto.d-block :} |
 | :------ |:--- | :--- |
-| ![ACRP](/assets/png/acrp_link.png){: .mx-auto.d-block :} | ![AstaZero](/assets/png/astazero_link.png){: .mx-auto.d-block :} | ![NRSL](/assets/png/nrsl_link.png){: .mx-auto.d-block :} |
 | ![THON](/assets/png/thon_bot_link2.png){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](https://www.wikipedia.org/){: .mx-auto.d-block :} |
 
 </br>
 </br>
 </br>
 
-## Airport Cooperative Research Project (ACRP) Design Challenge
+## Airport Cooperative Research Project (ACRP) Design Challenge {#ACRP}
 The Airport Cooperative Research Program is a national competition for university students and was a component of one of my classes in the Engineering Leadership Development minor program. The competition tasked students with improving one aspect of an airport terminal and operations in a thoughtful and well-researched way; everything was to be submitted in a final report for industry experts and judges.  
 
 Our group decided to investigate an aspect of an airport that we could directly study and improve: the terminal experience for elderly passengers. Through family interviews, field research at a local airport, and copious research on the elderly population in America, we decided to create a Bluetooth-based device that directs passengers to bathrooms, food courts, gates, and other services. Because of our efforts, we were awarded 2nd Place nationally in the Airport Management and Planning category.
 
 [Link to Commercial Video](https://www.youtube.com/watch?v=CzLzuzDaduI)
 [Link to Report](https://williamkraus.files.wordpress.com/2021/10/l.e.n.d.-acrp-challenge-report.pdf)
+### Back to Top {#start}
+
+
 
 Here's a code chunk:
 

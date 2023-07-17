@@ -6,12 +6,9 @@ subtitle: Projects completed / in progress from undergrad and beyond
 {: .box-success}
 This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
 
-**Here is some bold text**
+[# Project Image Links]{#Project Images}
 
-## Project Image Links 
-{#Project Images}
-
-Image test: 11 (fix internal links all)
+Image test: 12 (fix internal links all again)
 
 | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} |
 | :------ |:--- | :--- |
@@ -22,22 +19,23 @@ The Airport Cooperative Research Program is a national competition for universit
 
 Our group decided to investigate an aspect of an airport that we could directly study and improve: the terminal experience for elderly passengers. Through family interviews, field research at a local airport, and copious research on the elderly population in America, we decided to create a Bluetooth-based device that directs passengers to bathrooms, food courts, gates, and other services. Because of our efforts, we were awarded 2nd Place nationally in the Airport Management and Planning category.
 
-[Link to Commercial Video](https://www.youtube.com/watch?v=CzLzuzDaduI) and [Link to Report](https://williamkraus.files.wordpress.com/2021/10/l.e.n.d.-acrp-challenge-report.pdf)
+[Link to Commercial Video](https://www.youtube.com/watch?v=CzLzuzDaduI) 
 
-Back to Top (#Project Images)
+[Link to Report](https://williamkraus.files.wordpress.com/2021/10/l.e.n.d.-acrp-challenge-report.pdf)
+
+[Back to Top](#Project Images)
 
 ## Autonomous Surveillance of Restricted Area Using Drones {#drone}
-Back to Top (#Project Images)
+[Back to Top] (#Project Images)
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
-Back to Top (#Project Images)
+[Back to Top] (#Project Images)
 
 ## THON Bot: 5 Foot Tall Dancing Humanoid Robot {#THON}
-Back to Top (#Project Images)
+[Back to Top] (#Project Images)
 
 ## Tony Pi Humanoid Robot Projects {#tonypi}
-Back to Top (#Project Images)
-
+[Back to Top] (#Project Images)
 
 Here's a code chunk:
 

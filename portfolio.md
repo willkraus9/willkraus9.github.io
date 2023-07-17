@@ -24,12 +24,12 @@ Here's a table:
 Center image:
 ![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
 
-Image test: 5
+Image test: 6 (centering)
 
 | Number | Next number | Previous number |
 | :------ |:--- | :--- |
-| ![ACRP](/assets/png/acrp_link.png) | ![AstaZero](/assets/png/astazero_link.png) | ![NRSL](/assets/png/nrsl_link.png) |
-| ![THON](/assets/png/thon_bot_link2.png) | [![TonyPi](/assets/png/tonypi_link.png)](https://www.wikipedia.org/) |
+| ![ACRP](/assets/png/acrp_link.png){: .mx-auto.d-block :} | ![AstaZero](/assets/png/astazero_link.png){: .mx-auto.d-block :} | ![NRSL](/assets/png/nrsl_link.png){: .mx-auto.d-block :} |
+| ![THON](/assets/png/thon_bot_link2.png){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](https://www.wikipedia.org/){: .mx-auto.d-block :} |
 
 
 Here's a code chunk:

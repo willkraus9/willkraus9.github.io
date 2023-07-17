@@ -29,8 +29,12 @@ It can also be centered!
 
 ![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
 
-![ACRP](https://willkraus9.github.io/master/assets/png/acrp_link.png)
 
+
+![ACRP](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/acrp_link.png)
+https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/astazero_link.png
+
+https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/nrsl_link.png
 
 Here's a code chunk:
 

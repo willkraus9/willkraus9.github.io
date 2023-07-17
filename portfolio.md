@@ -29,6 +29,9 @@ It can also be centered!
 
 ![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
 
+![ACRP](https://willkraus9.github.io/master/assets/png/acrp_link.png)
+
+
 Here's a code chunk:
 
 ~~~
@@ -37,6 +40,7 @@ var foo = function(x) {
 }
 foo(3)
 ~~~
+![ACRP](https://willkraus9.github.io/blob/assets/png/acrp_link.png)
 
 And here is the same code with syntax highlighting:
 

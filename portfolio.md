@@ -12,25 +12,33 @@ This is a demo post to show you how to write blog posts with markdown.  I strong
 
 [This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
 
-Here's a table:
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
-Center image:
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
-
-Image test: 6 (centering)
+Image test: 7 (ACRP)
 
 | Number | Next number | Previous number |
 | :------ |:--- | :--- |
 | ![ACRP](/assets/png/acrp_link.png){: .mx-auto.d-block :} | ![AstaZero](/assets/png/astazero_link.png){: .mx-auto.d-block :} | ![NRSL](/assets/png/nrsl_link.png){: .mx-auto.d-block :} |
 | ![THON](/assets/png/thon_bot_link2.png){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](https://www.wikipedia.org/){: .mx-auto.d-block :} |
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Airport Cooperative Research Project (ACRP) Design Challenge
+The Airport Cooperative Research Program is a national competition for university students and was a component of one of my classes in the Engineering Leadership Development minor program. The competition tasked students with improving one aspect of an airport terminal and operations in a thoughtful and well-researched way; everything was to be submitted in a final report for industry experts and judges.  
+
+Our group decided to investigate an aspect of an airport that we could directly study and improve: the terminal experience for elderly passengers. Through family interviews, field research at the University Park airport, and copious research on the elderly population in America, we decided to create a Bluetooth-based device that directs passengers to bathrooms, food courts, gates, and other services. Because of our efforts, we were awarded 2nd Place nationally in the Airport Management and Planning category.
+
+[Link to Commercial Video](https://www.youtube.com/watch?v=CzLzuzDaduI)
 
 Here's a code chunk:
 

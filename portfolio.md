@@ -21,20 +21,16 @@ Here's a table:
 | Seven | Eight | Six |
 | Two | Three | One |
 
-How about a yummy crepe?
-![ACRP](https://willkraus9.github.io/blob/master/assets/png/acrp_link.png)
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
-
-It can also be centered!
-
+Center image:
 ![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
 
 
 
 ![ACRP](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/acrp_link.png)
-https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/astazero_link.png
-
-https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/nrsl_link.png
+![AstaZero](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/astazero_link.png)
+![NRSL](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/nrsl_link.png)
+![THON](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/thon_bot_link2.png)
+![TonyPi](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/tonypi_link.png)
 
 Here's a code chunk:
 
@@ -44,7 +40,6 @@ var foo = function(x) {
 }
 foo(3)
 ~~~
-![ACRP](https://willkraus9.github.io/blob/assets/png/acrp_link.png)
 
 And here is the same code with syntax highlighting:
 
@@ -54,6 +49,8 @@ var foo = function(x) {
 }
 foo(3)
 ```
+[![TonyPi](https://github.com/willkraus9/willkraus9.github.io/blob/master/assets/png/tonypi_link.png)](https://www.wikipedia.org/)
+
 
 And here is the same code yet again but with line numbers:
 
@@ -82,12 +79,3 @@ You can add notification, warning and error boxes like this:
 {: .box-error}
 **Error:** This is an error box.
 
-## Local URLs in project sites {#local-urls}
-
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
-
-![Crepe](/assets/img/crepe.jpg)
-
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
-
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})

@@ -2,9 +2,9 @@
 title: Engineering Portfolio
 subtitle: Click on an image to get started.
 ---
-| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | 
-| [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} | |[![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | 
-| [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :} |
+| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} 
+| [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} 
+| [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
 
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
@@ -39,7 +39,7 @@ The class also taught OpenCV omputer vision basics and development using the rob
 [Link to Track](/assets/mov/TonyPi_Track.mp4)
 
 ## Drumstick: Testing Quadruped Leg Principles {#DRUM}
-To prepare for graduate school, I decided to construct a quadruped leg in my free time over the summer using off-the-shelf components and 3D printed parts. The design of the leg is loosely based on projects from the Open Dynamics Robot Initiative (https://open-dynamic-robot-initiative.github.io/), but I replaced the pancake motors with drone motors I already had with a 100:1 gearbox for increased torque. Also, the knee linear actuator common across different quadruped designs has been replaced with a motor directly attached to the joint for ease of use.
+To prepare for graduate school, I decided to construct a quadruped leg in my free time over the summer using off-the-shelf components and 3D printed parts. The design of the leg is loosely based on projects from the Open Dynamics Robot Initiative (https://open-dynamic-robot-initiative.github.io), but I replaced the pancake motors with drone motors I already had with a 100:1 gearbox for increased torque. Also, the knee linear actuator common across different quadruped designs has been replaced with a motor directly attached to the joint for ease of use.
 
 ![Drumstick Diagram](/assets/png/drumstick_diagram.png){: .mx-auto.d-block :}
 

@@ -2,9 +2,8 @@
 title: Engineering Portfolio
 subtitle: Click on an image to get started.
 ---
-| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} 
-| [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} 
-| [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
+| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
+| [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
 
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}

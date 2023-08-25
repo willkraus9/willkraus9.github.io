@@ -19,12 +19,11 @@ author: Will Kraus
 # --- List of links in the navigation bar --- #
 ###############################################
 
-  navbar-links:
-#  About Me: "aboutme"
-  Information: 
-  - Resume / CV: "/assets/Will Kraus Resume_CV.pdf"
-  - Portfolio: "portfolio"
 
+navbar-links:
+  Resume / CV: "/assets/Will_Kraus__Resume_SU23_.pdf"
+  Portfolio: "portfolio"
+  
 ################
 # --- Logo --- #
 ################

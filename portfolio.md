@@ -8,7 +8,7 @@ subtitle: Click on an image to get started.
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
 
-During my undergraduate experience at Penn State University, I became the lead undergraduate researcher for the Networked Robotic Systems Lab (NRSL). The project that I spent most of my time with used A* and path planning algorithms in MATLAB and C++ to navigate an unfamiliar area. This robot, which I helped prototype for lab demonstration, would connect to a Vicon motion capture system to record its position and determine possible trajectories.
+During my undergraduate experience at Penn State University, I became the lead undergraduate researcher for the Networked Robotic Systems Lab (NRSL). The project that I spent most of my time with used A* and path planning algorithms in MATLAB to navigate an unfamiliar area. This robot, which I helped prototype for lab demonstration, would connect to a Vicon motion capture system to record its position and determine possible trajectories.
 
 ![Jake Bot Diagram](/assets/png/JakeBot.png){: .mx-auto.d-block :}
 

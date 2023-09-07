@@ -18,9 +18,9 @@ The lab became unused during the pandemic, so my day-to-day duties also included
 
 
 ## THON Bot: 5 Foot Tall Dancing Humanoid Robot {#THON}
-As a way to build advanced experiences for the Robotics Club, I created the THON Bot project. THON Bot is a 5 foot humanoid dancing robot that will interact with attendees for 48 hours continuously at THON 2025. This is one of the most complicated and rewarding robotics projects that I have experienced at Penn State University; there are electronics and controls problems that I would not have encountered as an undergraduate in Mechanical Engineering.
+As a way to build advanced experiences for the Robotics Club, I created the THON Bot project. THON Bot is a 5 foot humanoid dancing robot that will interact with attendees for 48 hours continuously at THON 2025, which is a dance marathon that raises funds for pediatric cnacer. This is one of the most complicated and rewarding robotics projects that I have experienced at Penn State University; there are electronics and controls problems that I would not have encountered as an undergraduate in Mechanical Engineering.
 
-As the founder of the project, I divided the project into 3 teams: Hardware, Electronics, and Simulation/Control. On the Hardware team, I oversaw a team of interdisciplinary undergraduate engineers that designed, 3D printed, and assembled plastic and metal components of THON Bot.   
+As the founder of the project, I divided the project into 3 teams: Hardware, Electronics, and Simulation. On the Hardware team, I oversaw a team of interdisciplinary undergraduate engineers that designed, 3D printed, and assembled plastic and metal components of THON Bot.   
 
 ![THON Bot Diagram](/assets/png/thon_bot_diagram.png){: .mx-auto.d-block :}
 
@@ -33,7 +33,7 @@ During my senior year, I had the opportunity to enroll in the recently developed
 
 [Link to Dance](/assets/mov/TonyPi_Dance.mp4)
 
-The class also taught OpenCV omputer vision basics and development using the robot's onboard camera system. For one of my projects, I tuned a PID controller to control the servo motors on the camera to track the centermost face.
+The class also taught OpenCV fundamentals using the robot's onboard camera system. For one of my projects, I tuned a PID controller to control the servo motors on the camera to track the centermost face.
 
 [Link to Track](/assets/mov/TonyPi_Track.mp4)
 

@@ -28,7 +28,7 @@ In the future, THON Bot has a variety of uses outside of the THON dance marathon
 
 
 ## Tony Pi Humanoid Robot Projects {#tonypi}
-During my senior year, I had the opportunity to enroll in a humanoid robotics class at Penn State. Because of the freeform nature of the course, I learned a variety of software related to devleoping code for a TonyPi humanoid robot. Code was written in Python and sent to an onboard Raspberry Pi to make the robot perform a variety of tasks such as dancing, performing exercises, and stacking wooden blocks. As part of the course, I performed a stabililty analysis based on accelerometer and presssure data to determine which movements were more stable than others and what factors play into stable bipedal motion.
+During my senior year, I had the opportunity to enroll in a humanoid robotics class at Penn State. Because of the freeform nature of the course, I learned a variety of software related to developing code for a TonyPi humanoid robot. Code was written in Python and sent to an onboard Raspberry Pi to make the robot perform a variety of tasks such as dancing, performing exercises, and stacking wooden blocks. As part of the course, I performed a stability analysis based on accelerometer and pressure data to determine which movements were more stable than others and what factors play into stable bipedal motion.
 
 
 [Link to Dance](/assets/mov/TonyPi_Dance.mp4)

@@ -42,7 +42,7 @@ To prepare for graduate school, I decided to construct a quadruped leg in my fre
 
 ![Drumstick Diagram](/assets/png/drumstick_diagram.png){: .mx-auto.d-block :}
 
-One of the areas I am particularly interested in studying further is how to modify electromechnaical designs to increase the capabilities of mobile robots. Most of the parts in the quadruped leg are replaceable and can be modified with tools common to makerspaces; this allows me to implement changes in both the control systems and the hardware design of the robot to deepen my understanding of specific concepts. 
+One of the areas I am particularly interested in studying further is how to modify electromechanical designs to increase the capabilities of mobile robots. Most of the parts in the quadruped leg are replaceable and can be modified with tools common to makerspaces; this allows me to implement changes in both the control systems and the hardware design of the robot to deepen my understanding of specific concepts. 
 
 ## Autonomous Surveillance of Restricted Area Using Drones {#drone}
 AstaZero AB has an autonomous vehicle testing and research facility in a heavily wooded area in Sweden. This facility is surrounded by an approximately 10 kilometer fence to prevent moose, deer, and other animals from interrupting outdoor experiments. The team had the opportunity to automate this process using existing drone hardware at AstaZero.

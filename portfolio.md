@@ -1,6 +1,9 @@
 ---
 title: Engineering Portfolio
 subtitle: Click on an image to get started.
+
+<a href="#top">Back to Top</a>
+
 ---
 | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
 | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
@@ -15,6 +18,8 @@ During my undergraduate experience at Penn State University, I became the lead u
 The lab became unused during the pandemic, so my day-to-day duties also included developing a fleet of mobile robots that can be used in a variety of situations. These robots could be programmed via Arduino to run control or path planning algorithms in a graduate student lab setting or be upgraded with Jetson boards for research use.
 
 ![Kraus Researching](/assets//undergrad_research.png){: .mx-auto.d-block :}
+
+<a href="#top" class="btn btn-primary">Back to Top</a>
 
 
 ## THON Bot: 5 Foot Tall Dancing Humanoid Robot {#THON}

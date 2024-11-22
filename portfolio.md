@@ -4,12 +4,24 @@ subtitle: Click on an image to get started.
 ---
 <a href="#top"> </a>
 
-| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
+| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :} | [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :} | [![LocoMan](/assets/png/locoman_link.png)](#locoman){: .mx-auto.d-block :} 
 
-| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :} | [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :} | [![KCF](/assets/png/kcf_link.png)](#KCF){: .mx-auto.d-block :} 
+| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} |  [![KCF](/assets/png/kcf_link.png)](#KCF){: .mx-auto.d-block :} 
 
 | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
 
+## Research into Graduate-level Course Assignment: Quadruped Loco-Manipulation with Whole Body Control {#locoman}
+
+Quadruped robots with four legs can go places where other robots cannot: over large obstacles, across gaps, and through tight spaces. Even though these quadruped robots have admirable athleticism, manipulating objects in the real world can be a challenge, especially if the objects are also in confined spaces. A solution to the problem of manipulating objects can be found in the paper “LocoMan: Advancing Versatile Quadrupedal Dexterity with Lightweight Loco-Manipulators”, which uses small arms on the calves of front legs of the robot to grab objects and interact with the surroundings. This research project is being adapted into a graduate-level course assignment as a part of ongoing work with Dr. Ding Zhao in his Modern Control Theory course and features an AWS-based quadruped control assignment in the Isaac Gym simulation environment.
+
+Controlling the quadruped robot depends on what type of user command the robot should accept; the robot can support teleoperation mode, a bipedal standup maneuver on the hind legs of the robot, and manipulation mode using the 3-degree-of-freedom end effectors on the front legs. These different modes are changed through a finite state machine, which changes the way the controller on the robot prioritizes certain control objectives. The central control objectives are passed through a whole-body controller that takes in the state of the robot as well as desired states of the feet, torso, and end effectors. This data is processed by the controller that finds the optimal torque the motors should move to make the robot execute the action. Motor inputs are filtered through a PD controller that dampens the input torques and accounts for velocity and acceleration mismatch between the controller speed and real-life conditions. Once these torques are used, a state estimation technique is used to estimate the position and velocity of the robot and this information is fed back into the controller.
+
+![LocoMan Diagram](/assets/locoman_diagram.png){: .mx-auto.d-block :}
+Figure 1: Block diagram for LocoMan paper, with finite state machine (Robot Commander, Green) and control architecture (Unified Whole-Body Controller, Red)
+
+By using this system of mode commander and whole body controller, the LocoMan hardware and software implementation were able to manipulate small objects in narrow gaps through teleoperation as well as achieve numerous challenging tasks such as opening drawers. Work on the assignment for the course adaptation has focused on running the simulation in AWS and visualizing the robot in the Isaac Gym environment. 
+
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
 
@@ -23,11 +35,9 @@ The lab became unused during the pandemic, so my day-to-day duties also included
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
-
 ## Predictive Maintenance of Industrial Robots using IoT Vibration Sensors {#KCF}
 
 Industrial equipment with moving parts such as pumps and fans break down and have to be repaired, costing a company time and money while the production of goods halts. To avoid stopping production, predictive maintenance algorithms can be used alongside sensors or robots that proactively monitor machines for signs of imminent damage rather than reacting to equipment failures. This project, which was completed during an undergraduate internship at KCF Technologies, seeks to use industrial IoT vibration sensors placed on industrial arm robots to optimize sensor collection windows in an automotive use case.
-
 
 Industrial robots have several joints, all of which can fail from excessive wear on gearboxes. These failures can be predicted early by seeing the vibration on the joints for signs of excess forces and acceleration plots that spike in particular ways for gear wear. By measuring these vibration readings using a wireless accelerometer and processing data off-site as a service, industrial customers can maximize their time producing cars and prevent massive damage to their robots. These robots only show signs of failure when their joints are in motion, and the IoT sensor company providing the internship had an open problem to time sensor collection windows to robot motion. Some of these robots were of the Fanuc brand, which uses a software tool called Zero Down Time (ZDT) to store the output of programmed robots that shows the simplified motion commands called G-code. By reading this G-code, sensor collection windows can be selected that more precisely times the sensor readings to when the joints are under stress. This innovative way of synchronizing two forms of data not only preserved the privacy of the actual code used in production lines by only observing the output, but the arrangement also allowed for much flexibility in production lines by configuring the collection windows independent of any particular tasks, which can change dramatically as production lines are updated with new products.
 
@@ -42,7 +52,6 @@ The project was presented to peers and key decision makers at the internship com
 As satellite missions become more complex and expensive, the trend towards higher mass and volume payloads has to be balanced with hardware and control robustness in order to ensure mission success. With larger mass and volume payloads, flexible structures that make deploying satellites become more common but can induce unwanted vibration properties that complicate fine-pointing maneuvers such as stargazing or finding relative position near planets.
 
  This research project explores how a distributed reaction wheel placement strategy can be beneficial for controlling the vibration of flexible structures in comparison to the standard centralized approach that is common throughout standard satellite designs. To demonstrate how vibration suppression techniques can work in this context, a hardware testbed has been developed that features a flexible cantilever beam with a single reaction wheel that controls the vibration of the structure at the dominant vibration modes of the structure. 
-
 
 To demonstrate the potential effectiveness of the distributed vibration suppression system, an Aluminum 6061 beam is attached in a cantilever fashion and actuated with a brushless DC reaction wheel with inertial measurement unit sensors at the point of actuation. By activating this reaction wheel at certain frequencies, the structure can be vibrated in a fashion that suppresses extraneous movement. This vibration data, measured by the inertial measurement unit sensors, is transferred to a computer to enable real-time control and facilitate data collection. 
 
@@ -68,8 +77,6 @@ Since testing on a real autonomous vehicle would be prohibitively expensive, a s
 ![MCT Turning LQR](/assets/mct_car.png){: .mx-auto.d-block :}
 LQR controller performing a sharp (~90 degree) turn on the simulated track.
 
-
-
 In addition to controllers that ensure proper driving, autonomous vehicles are expected to negotiate complex scenarios using planning algorithms at a similar scale to human drivers. To simulate a driving scenario requiring a planning algorithm, another opponent vehicle was added to the simulation that the controlled vehicle would have to navigate around in a lane-change maneuver using the A* path planning algorithm. The A* algorithm uses a graph search technique that finds the shortest viable path to solve the given problem. With this shortest viable path, the LQR-controlled autonomous vehicle was able to overtake the other vehicle and successfully avoid a collision.
 
 ![A* Planner](/assets/mct_results.png){: .mx-auto.d-block :}
@@ -82,7 +89,6 @@ In conclusion, both the LQR controller and A* path planning algorithm were succe
 [ROS + Gazebo GitHub Repo](https://github.com/willkraus9/Webots-to-ROS-Control-Simulation) 
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
-
 
 ## THON Bot: 5 Foot Tall Dancing Humanoid Robot {#THON}
 As a way to build advanced experiences for the Robotics Club, I created the THON Bot project. THON Bot is a 5 foot humanoid dancing robot that will interact with attendees for 48 hours continuously at THON 2025, which is a dance marathon that raises funds for pediatric cancer. This is one of the most complicated and rewarding robotics projects that I have experienced at Penn State University; there are electronics and controls problems that I would not have encountered as an undergraduate in Mechanical Engineering.
@@ -98,15 +104,13 @@ In the future, THON Bot has a variety of uses outside of the THON dance marathon
 ## Tony Pi Humanoid Robot Projects {#tonypi}
 During my senior year, I had the opportunity to enroll in a humanoid robotics class at Penn State. Because of the freeform nature of the course, I learned a variety of software related to developing code for a TonyPi humanoid robot. Code was written in Python and sent to an onboard Raspberry Pi to make the robot perform a variety of tasks such as dancing, performing exercises, and stacking wooden blocks. As part of the course, I performed a stability analysis based on accelerometer and pressure data to determine which movements were more stable than others and what factors play into stable bipedal motion.
 
-
 [Link to Dance](/assets/mov/TonyPi_Dance.mp4)
 
 The class also taught OpenCV fundamentals using the robot's onboard camera system. For one of my projects, I tuned a PID controller to control the servo motors on the camera to track the centermost face.
 
-[Link to Track](/assets/mov/TonyPi_Track.mp4)
+[Link to Tracking Script](/assets/mov/TonyPi_Track.mp4)
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
-
 
 ## Drumstick: Testing Quadruped Leg Principles {#DRUM}
 To prepare for graduate school, I decided to construct a quadruped leg in my free time over the summer using off-the-shelf components and 3D printed parts. The design of the leg is loosely based on projects from the Open Dynamics Robot Initiative (https://open-dynamic-robot-initiative.github.io), but I replaced the pancake motors with drone motors I already had with a 100:1 gearbox for increased torque. Also, the knee linear actuator common across different quadruped designs has been replaced with a motor directly attached to the joint for ease of use.
@@ -116,7 +120,6 @@ To prepare for graduate school, I decided to construct a quadruped leg in my fre
 One of the areas I am particularly interested in studying further is how to modify electromechanical designs to increase the capabilities of mobile robots. Most of the parts in the quadruped leg are replaceable and can be modified with tools common to makerspaces; this allows me to implement changes in both the control systems and the hardware design of the robot to deepen my understanding of specific concepts. 
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
-
 
 ## Autonomous Surveillance of Restricted Area Using Drones {#drone}
 AstaZero AB has an autonomous vehicle testing and research facility in a heavily wooded area in Sweden. This facility is surrounded by an approximately 10 kilometer fence to prevent moose, deer, and other animals from interrupting outdoor experiments. The team had the opportunity to automate this process using existing drone hardware at AstaZero.

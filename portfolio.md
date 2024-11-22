@@ -6,7 +6,10 @@ subtitle: Click on an image to get started.
 
 | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
 
-| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
+| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :} | [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
+
+
+
 
 
 | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
@@ -42,6 +45,29 @@ This data collection setup can be used to create a state-space model essential f
 Flexible satellite hardware testbed undergoing system identification experimentation. A signal is sent to the motor that actuates the structure over a range of frequencies that cover the expected frequency of the controller and vibration frequencies of the structure.
 
 Preliminary results of the hardware setup show promising results that could be of assistance to future research. To compare future results, a PID controller was developed that stabilizes the system over a period of about 15 seconds from a deflection of 10 centimeters. An improvement to PID control would be LQR, which would use the system identification results to control a more accurate model to suppress vibrations. These experiments are ongoing, but datasets have been collected that, when manipulated with the N4SID algorithm, output a state-space model that can be compared to the dynamics-based model in both performance on the LQR controller and for testing stability and controllability. 
+
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
+
+
+## Control of an Autonomous Vehicle in 2 Different Simulation Environments {#MCT}
+
+Autonomous vehicles have several diverse applications, from taxicab services to mining material transportation, and are poised to develop dramatically over the next decade due to research funding and industry support. To aid in this development, a firm understanding of how autonomous vehicles maintain heading along reference paths, navigate complex lane changing maneuvers, and possess the capability to transfer the necessary algorithms to a real-world setting is paramount. This project explores how these three areas can be developed through a Webots simulation of an autonomous Tesla sedan and, for real-world application potential, a Gazebo simulation environment built upon a ROS middleware framework popular with hardware-based implementations. 
+
+Since testing on a real autonomous vehicle would be prohibitively expensive, a simulation environment complete with GPS-esque waypoints and approximated sensor readings was created. This environment allowed for the development of a PID steering controller, which acted as a baseline against more elaborate controllers. The PID steering controller and subsequent implementations use two main metrics for measuring performance: total time to complete the track and the error between the center of the road and the center of mass of the car. Using the cross-track error as a direct way to measure the error of the car, a PID steering controller was constructed that traversed the track in 169 seconds with an average cross-track error of 0.63 meters. To improve upon the PID controller, which does not account for the model parameters of the autonomous vehicle, an LQR steering controller was devised to improve upon this performance. By adding model information and tuning certain hyperparameters, the steering controller reduced the total time around the rack by 21% with a 0.02 meter cross-track error increase. 
+
+![MCT Turning LQR](/assets/mct_car.png){: .mx-auto.d-block :}
+LQR controller performing a sharp (~90 degree) turn on the simulated track.
+
+
+
+In addition to controllers that ensure proper driving, autonomous vehicles are expected to negotiate complex scenarios using planning algorithms at a similar scale to human drivers. To simulate a driving scenario requiring a planning algorithm, another opponent vehicle was added to the simulation that the controlled vehicle would have to navigate around in a lane-change maneuver using the A* path planning algorithm. The A* algorithm uses a graph search technique that finds the shortest viable path to solve the given problem. With this shortest viable path, the LQR-controlled autonomous vehicle was able to overtake the other vehicle and successfully avoid a collision.
+
+![A* Planner](/assets/mct_results.png){: .mx-auto.d-block :}
+Simulated results of both the lane change in a toy scenario (top) and the actual simulation (bottom). The toy scenario draws a blue path around the yellow restricted areas that includes the future path of the adversarial vehicle.
+
+In conclusion, both the LQR controller and A* path planning algorithm were successfully tested in simulation and show improvement over more naive algorithms. As a future goal to build upon this work, the simulation environment and sensor readings were transferred to a ROS middleware and Gazebo simulation environment. This setup for a simulated robot allows for a hardware implementation to be developed in the future, since the open-source ROS structure has several resources for developing real-time hardware communication and control.
+
+[ROS + Gazebo GitHub Repo](https://github.com/willkraus9/Webots-to-ROS-Control-Simulation) 
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
 

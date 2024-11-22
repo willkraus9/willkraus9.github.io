@@ -5,8 +5,11 @@ subtitle: Click on an image to get started.
 <a href="#top"> </a>
 
 | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
-| [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
 
+| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
+
+
+| [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
 
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}
@@ -19,7 +22,28 @@ The lab became unused during the pandemic, so my day-to-day duties also included
 
 ![Kraus Researching](/assets//undergrad_research.png){: .mx-auto.d-block :}
 
-<a href="#top" class="btn btn-primary">Back to Top</a>
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
+
+## Flexible Satellite Hardware Control using a Distributed Actuation Approach {#FlexSat}
+
+As satellite missions become more complex and expensive, the trend towards higher mass and volume payloads has to be balanced with hardware and control robustness in order to ensure mission success. With larger mass and volume payloads, flexible structures that make deploying satellites become more common but can induce unwanted vibration properties that complicate fine-pointing maneuvers such as stargazing or finding relative position near planets.
+
+ This research project explores how a distributed reaction wheel placement strategy can be beneficial for controlling the vibration of flexible structures in comparison to the standard centralized approach that is common throughout standard satellite designs. To demonstrate how vibration suppression techniques can work in this context, a hardware testbed has been developed that features a flexible cantilever beam with a single reaction wheel that controls the vibration of the structure at the dominant vibration modes of the structure. 
+
+
+To demonstrate the potential effectiveness of the distributed vibration suppression system, an Aluminum 6061 beam is attached in a cantilever fashion and actuated with a brushless DC reaction wheel with inertial measurement unit sensors at the point of actuation. By activating this reaction wheel at certain frequencies, the structure can be vibrated in a fashion that suppresses extraneous movement. This vibration data, measured by the inertial measurement unit sensors, is transferred to a computer to enable real-time control and facilitate data collection. 
+
+![FlexSat Hardware](/assets//flexsat_hw.png){: .mx-auto.d-block :}
+Internal electronics for the Flexible Satellite hardware testbed. On the side of the flexible structure, two microcontrollers (pictured in blue) facilitate data transfer from the computer to the reaction wheel (left).
+
+This data collection setup can be used to create a state-space model essential for complex control algorithms via system identification. This system identification technique uses experimental data from the structure that was subjected to a range of frequencies from the reaction wheel; this data is run through the N4SID algorithm to provide a better estimation than a dynamics-based approach of the system because the experiments account for model mismatches and hardware inaccuracies. 
+
+![FlexSat Experiment](/assets//flexsat_sysid2.gif){: .mx-auto.d-block :}
+Flexible satellite hardware testbed undergoing system identification experimentation. A signal is sent to the motor that actuates the structure over a range of frequencies that cover the expected frequency of the controller and vibration frequencies of the structure.
+
+Preliminary results of the hardware setup show promising results that could be of assistance to future research. To compare future results, a PID controller was developed that stabilizes the system over a period of about 15 seconds from a deflection of 10 centimeters. An improvement to PID control would be LQR, which would use the system identification results to control a more accurate model to suppress vibrations. These experiments are ongoing, but datasets have been collected that, when manipulated with the N4SID algorithm, output a state-space model that can be compared to the dynamics-based model in both performance on the LQR controller and for testing stability and controllability. 
+
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
 
 ## THON Bot: 5 Foot Tall Dancing Humanoid Robot {#THON}
@@ -31,6 +55,7 @@ As the founder of the project, I divided the project into 3 teams: Hardware, Ele
 
 In the future, THON Bot has a variety of uses outside of the THON dance marathon. The project has functions and hardware that would benefit Human-Robot Interaction research or answer ethical questions about the nature of robots in society.
 
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
 ## Tony Pi Humanoid Robot Projects {#tonypi}
 During my senior year, I had the opportunity to enroll in a humanoid robotics class at Penn State. Because of the freeform nature of the course, I learned a variety of software related to developing code for a TonyPi humanoid robot. Code was written in Python and sent to an onboard Raspberry Pi to make the robot perform a variety of tasks such as dancing, performing exercises, and stacking wooden blocks. As part of the course, I performed a stability analysis based on accelerometer and pressure data to determine which movements were more stable than others and what factors play into stable bipedal motion.
@@ -42,12 +67,18 @@ The class also taught OpenCV fundamentals using the robot's onboard camera syste
 
 [Link to Track](/assets/mov/TonyPi_Track.mp4)
 
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
+
+
 ## Drumstick: Testing Quadruped Leg Principles {#DRUM}
 To prepare for graduate school, I decided to construct a quadruped leg in my free time over the summer using off-the-shelf components and 3D printed parts. The design of the leg is loosely based on projects from the Open Dynamics Robot Initiative (https://open-dynamic-robot-initiative.github.io), but I replaced the pancake motors with drone motors I already had with a 100:1 gearbox for increased torque. Also, the knee linear actuator common across different quadruped designs has been replaced with a motor directly attached to the joint for ease of use.
 
 ![Drumstick Diagram](/assets/png/drumstick_diagram.png){: .mx-auto.d-block :}
 
 One of the areas I am particularly interested in studying further is how to modify electromechanical designs to increase the capabilities of mobile robots. Most of the parts in the quadruped leg are replaceable and can be modified with tools common to makerspaces; this allows me to implement changes in both the control systems and the hardware design of the robot to deepen my understanding of specific concepts. 
+
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
+
 
 ## Autonomous Surveillance of Restricted Area Using Drones {#drone}
 AstaZero AB has an autonomous vehicle testing and research facility in a heavily wooded area in Sweden. This facility is surrounded by an approximately 10 kilometer fence to prevent moose, deer, and other animals from interrupting outdoor experiments. The team had the opportunity to automate this process using existing drone hardware at AstaZero.
@@ -62,12 +93,16 @@ Overall, the project was chosen for Best Project Award out of nearly one hundred
 
 [Link to Video](https://www.youtube.com/watch?v=jhPUywB5TlE)
 
-
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
 ## Airport Cooperative Research Project (ACRP) Design Challenge {#ACRP}
 The Airport Cooperative Research Program is a national competition for university students and was a component of one of my classes in the Engineering Leadership Development minor program. The competition tasked students with improving one aspect of an airport terminal and operations in a thoughtful and well-researched way; everything was to be submitted in a final report for industry experts and judges.  
 
 Our group decided to investigate an aspect of an airport that we could directly study and improve: the terminal experience for elderly passengers. Through family interviews, field research at a local airport, and copious research on the elderly population in America, we decided to create a Bluetooth-based device that directs passengers to bathrooms, food courts, gates, and other services. Because of our efforts, we were awarded 2nd Place nationally in the Airport Management and Planning category.
+
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
+
+
 
 [Link to Video](https://www.youtube.com/watch?v=CzLzuzDaduI) 
 

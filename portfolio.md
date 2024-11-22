@@ -6,11 +6,7 @@ subtitle: Click on an image to get started.
 
 | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
 
-| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :} | [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :} | [![TonyPi](/assets/png/tonypi_link.png)](#tonypi){: .mx-auto.d-block :} 
-
-
-
-
+| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :} | [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :} | [![KCF](/assets/png/kcf_link.png)](#KCF){: .mx-auto.d-block :} 
 
 | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
 
@@ -24,6 +20,20 @@ During my undergraduate experience at Penn State University, I became the lead u
 The lab became unused during the pandemic, so my day-to-day duties also included developing a fleet of mobile robots that can be used in a variety of situations. These robots could be programmed via Arduino to run control or path planning algorithms in a graduate student lab setting or be upgraded with Jetson boards for research use.
 
 ![Kraus Researching](/assets//undergrad_research.png){: .mx-auto.d-block :}
+
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
+
+
+## Predictive Maintenance of Industrial Robots using IoT Vibration Sensors {#KCF}
+
+Industrial equipment with moving parts such as pumps and fans break down and have to be repaired, costing a company time and money while the production of goods halts. To avoid stopping production, predictive maintenance algorithms can be used alongside sensors or robots that proactively monitor machines for signs of imminent damage rather than reacting to equipment failures. This project, which was completed during an undergraduate internship at KCF Technologies, seeks to use industrial IoT vibration sensors placed on industrial arm robots to optimize sensor collection windows in an automotive use case.
+
+
+Industrial robots have several joints, all of which can fail from excessive wear on gearboxes. These failures can be predicted early by seeing the vibration on the joints for signs of excess forces and acceleration plots that spike in particular ways for gear wear. By measuring these vibration readings using a wireless accelerometer and processing data off-site as a service, industrial customers can maximize their time producing cars and prevent massive damage to their robots. These robots only show signs of failure when their joints are in motion, and the IoT sensor company providing the internship had an open problem to time sensor collection windows to robot motion. Some of these robots were of the Fanuc brand, which uses a software tool called Zero Down Time (ZDT) to store the output of programmed robots that shows the simplified motion commands called G-code. By reading this G-code, sensor collection windows can be selected that more precisely times the sensor readings to when the joints are under stress. This innovative way of synchronizing two forms of data not only preserved the privacy of the actual code used in production lines by only observing the output, but the arrangement also allowed for much flexibility in production lines by configuring the collection windows independent of any particular tasks, which can change dramatically as production lines are updated with new products.
+
+![ZDT Diagram](/assets/zdt_explain.png){: .mx-auto.d-block :}
+
+The project was presented to peers and key decision makers at the internship company, which unfortunately experienced layoffs of almost all of the robotics-adjacent staff. The project was certainly innovative, and the ZDT portal for the robots later integrated a predictive maintenance feature mirroring that described in the presentation.
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
@@ -64,6 +74,8 @@ In addition to controllers that ensure proper driving, autonomous vehicles are e
 
 ![A* Planner](/assets/mct_results.png){: .mx-auto.d-block :}
 Simulated results of both the lane change in a toy scenario (top) and the actual simulation (bottom). The toy scenario draws a blue path around the yellow restricted areas that includes the future path of the adversarial vehicle.
+
+[Results Video + Controller Explanation](https://www.youtube.com/watch?v=ocHMkemsVao)
 
 In conclusion, both the LQR controller and A* path planning algorithm were successfully tested in simulation and show improvement over more naive algorithms. As a future goal to build upon this work, the simulation environment and sensor readings were transferred to a ROS middleware and Gazebo simulation environment. This setup for a simulated robot allows for a hardware implementation to be developed in the future, since the open-source ROS structure has several resources for developing real-time hardware communication and control.
 

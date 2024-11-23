@@ -10,7 +10,7 @@ subtitle: Click on an image to get started.
 
 | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
 
-## Research into Graduate-level Course Assignment: Quadruped Loco-Manipulation with Whole Body Control {#locoman}
+## Research Transformed to Graduate-level Course Assignment: Quadruped Loco-Manipulation with Whole Body Control {#locoman}
 
 Quadruped robots with four legs can go places where other robots cannot: over large obstacles, across gaps, and through tight spaces. Even though these quadruped robots have admirable athleticism, manipulating objects in the real world can be a challenge, especially if the objects are also in confined spaces. A solution to the problem of manipulating objects can be found in the paper “LocoMan: Advancing Versatile Quadrupedal Dexterity with Lightweight Loco-Manipulators”, which uses small arms on the calves of front legs of the robot to grab objects and interact with the surroundings. This research project is being adapted into a graduate-level course assignment as a part of ongoing work with Dr. Ding Zhao in his Modern Control Theory course and features an AWS-based quadruped control assignment in the Isaac Gym simulation environment.
 

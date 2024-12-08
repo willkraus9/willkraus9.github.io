@@ -56,7 +56,7 @@ As satellite missions become more complex and expensive, the trend towards highe
 To demonstrate the potential effectiveness of the distributed vibration suppression system, an Aluminum 6061 beam is attached in a cantilever fashion and actuated with a brushless DC reaction wheel with inertial measurement unit sensors at the point of actuation. By activating this reaction wheel at certain frequencies, the structure can be vibrated in a fashion that suppresses extraneous movement. This vibration data, measured by the inertial measurement unit sensors, is transferred to a computer to enable real-time control and facilitate data collection. 
 
 ![FlexSat Hardware](/assets//flexsat_hw.png){: .mx-auto.d-block :}
-Internal electronics for the Flexible Satellite hardware testbed. On the side of the flexible structure, two microcontrollers (pictured in blue) facilitate data transfer from the computer to the reaction wheel (left).
+### Internal electronics for the Flexible Satellite hardware testbed. On the side of the flexible structure, two microcontrollers (pictured in blue) facilitate data transfer from the computer to the reaction wheel (left).
 
 This data collection setup can be used to create a state-space model essential for complex control algorithms via system identification. This system identification technique uses experimental data from the structure that was subjected to a range of frequencies from the reaction wheel; this data is run through the N4SID algorithm to provide a better estimation than a dynamics-based approach of the system because the experiments account for model mismatches and hardware inaccuracies. 
 

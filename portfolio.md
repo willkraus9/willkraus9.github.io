@@ -17,7 +17,7 @@ Quadruped robots with four legs can go places where other robots cannot: over la
 Controlling the quadruped robot depends on what type of user command the robot should accept; the robot can support teleoperation mode, a bipedal standup maneuver on the hind legs of the robot, and manipulation mode using the 3-degree-of-freedom end effectors on the front legs. These different modes are changed through a finite state machine, which changes the way the controller on the robot prioritizes certain control objectives. The central control objectives are passed through a whole-body controller that takes in the state of the robot as well as desired states of the feet, torso, and end effectors. This data is processed by the controller that finds the optimal torque the motors should move to make the robot execute the action. Motor inputs are filtered through a PD controller that dampens the input torques and accounts for velocity and acceleration mismatch between the controller speed and real-life conditions. Once these torques are used, a state estimation technique is used to estimate the position and velocity of the robot and this information is fed back into the controller.
 
 ![LocoMan Diagram](/assets/locoman_diagram.png){: .mx-auto.d-block :}
-Figure 1: Block diagram for LocoMan paper, with finite state machine (Robot Commander, Green) and control architecture (Unified Whole-Body Controller, Red)
+<small>Block diagram for LocoMan paper, with finite state machine (Robot Commander, Green) and control architecture (Unified Whole-Body Controller, Red)
 
 By using this system of mode commander and whole body controller, the LocoMan hardware and software implementation were able to manipulate small objects in narrow gaps through teleoperation as well as achieve numerous challenging tasks such as opening drawers. Work on the assignment for the course adaptation has focused on running the simulation in AWS and visualizing the robot in the Isaac Gym environment. 
 
@@ -61,7 +61,7 @@ To demonstrate the potential effectiveness of the distributed vibration suppress
 This data collection setup can be used to create a state-space model essential for complex control algorithms via system identification. This system identification technique uses experimental data from the structure that was subjected to a range of frequencies from the reaction wheel; this data is run through the N4SID algorithm to provide a better estimation than a dynamics-based approach of the system because the experiments account for model mismatches and hardware inaccuracies. 
 
 ![FlexSat Experiment](/assets//flexsat_sysid2.gif){: .mx-auto.d-block :}
-<span style="font-size: 0.8em;">Flexible satellite hardware testbed undergoing system identification experimentation. A signal is sent to the motor that actuates the structure over a range of frequencies that cover the expected frequency of the controller and vibration frequencies of the structure.
+<small>Flexible satellite hardware testbed undergoing system identification experimentation. A signal is sent to the motor that actuates the structure over a range of frequencies that cover the expected frequency of the controller and vibration frequencies of the structure.
 
 Preliminary results of the hardware setup show promising results that could be of assistance to future research. To compare future results, a PID controller was developed that stabilizes the system over a period of about 15 seconds from a deflection of 10 centimeters. An improvement to PID control would be LQR, which would use the system identification results to control a more accurate model to suppress vibrations. These experiments are ongoing, but datasets have been collected that, when manipulated with the N4SID algorithm, output a state-space model that can be compared to the dynamics-based model in both performance on the LQR controller and for testing stability and controllability. 
 
@@ -75,12 +75,12 @@ Autonomous vehicles have several diverse applications, from taxicab services to 
 Since testing on a real autonomous vehicle would be prohibitively expensive, a simulation environment complete with GPS-esque waypoints and approximated sensor readings was created. This environment allowed for the development of a PID steering controller, which acted as a baseline against more elaborate controllers. The PID steering controller and subsequent implementations use two main metrics for measuring performance: total time to complete the track and the error between the center of the road and the center of mass of the car. Using the cross-track error as a direct way to measure the error of the car, a PID steering controller was constructed that traversed the track in 169 seconds with an average cross-track error of 0.63 meters. To improve upon the PID controller, which does not account for the model parameters of the autonomous vehicle, an LQR steering controller was devised to improve upon this performance. By adding model information and tuning certain hyperparameters, the steering controller reduced the total time around the rack by 21% with a 0.02 meter cross-track error increase. 
 
 ![MCT Turning LQR](/assets/mct_car.png){: .mx-auto.d-block :}
-LQR controller performing a sharp (~90 degree) turn on the simulated track.
+<small>LQR controller performing a sharp (~90 degree) turn on the simulated track.
 
 In addition to controllers that ensure proper driving, autonomous vehicles are expected to negotiate complex scenarios using planning algorithms at a similar scale to human drivers. To simulate a driving scenario requiring a planning algorithm, another opponent vehicle was added to the simulation that the controlled vehicle would have to navigate around in a lane-change maneuver using the A* path planning algorithm. The A* algorithm uses a graph search technique that finds the shortest viable path to solve the given problem. With this shortest viable path, the LQR-controlled autonomous vehicle was able to overtake the other vehicle and successfully avoid a collision.
 
 ![A* Planner](/assets/mct_results.png){: .mx-auto.d-block :}
-Simulated results of both the lane change in a toy scenario (top) and the actual simulation (bottom). The toy scenario draws a blue path around the yellow restricted areas that includes the future path of the adversarial vehicle.
+<small>Simulated results of both the lane change in a toy scenario (top) and the actual simulation (bottom). The toy scenario draws a blue path around the yellow restricted areas that includes the future path of the adversarial vehicle.
 
 [Results Video + Controller Explanation](https://www.youtube.com/watch?v=ocHMkemsVao)
 
@@ -142,8 +142,6 @@ The Airport Cooperative Research Program is a national competition for universit
 Our group decided to investigate an aspect of an airport that we could directly study and improve: the terminal experience for elderly passengers. Through family interviews, field research at a local airport, and copious research on the elderly population in America, we decided to create a Bluetooth-based device that directs passengers to bathrooms, food courts, gates, and other services. Because of our efforts, we were awarded 2nd Place nationally in the Airport Management and Planning category.
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
-
-
 
 [Link to Video](https://www.youtube.com/watch?v=CzLzuzDaduI) 
 

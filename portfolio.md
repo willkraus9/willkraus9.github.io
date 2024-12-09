@@ -1,6 +1,6 @@
 ---
 title: Engineering Portfolio
-subtitle: Click on an image to get started.
+subtitle: Click on an image to begin.
 ---
 <a href="#top"> </a>
 

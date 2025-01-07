@@ -7,9 +7,6 @@ subtitle: Here is what I've been working on currently, with some updates from ti
 
 In my current research in the REx Lab, I am working on an ongoing project with legged locomotion that simplifies model-based control strategies. For my portion of the project, I am researching how this framework changes gait requirements for stability to generate predictable and stable movements. So far, I have done prelimiary experiments using constrained trajectory optimization in a DDP formulation. 
 
-(insert GIF of nadia moving)
-
-
 ![Nadia](/nadia_step_fail.gif){: .mx-auto.d-block :}
 <small>Nadia taking some steps, now needs a chiropractor
 

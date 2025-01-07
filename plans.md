@@ -9,6 +9,11 @@ In my current research in the REx Lab, I am working on an ongoing project with l
 
 (insert GIF of nadia moving)
 
+
+![Nadia](/assets/nadia_step_fail.mov){: .mx-auto.d-block :}
+<small>Nadia taking some steps, now needs a chiropractor
+
+
 So far, this needs some attention, but improvements are possible :)
 
 Current TODOs for this project are: 
@@ -25,6 +30,7 @@ Fortunately, I have been in contact with the Director of Technology for the scho
 
 So far, the initial results look promising! I'm looking to wrap up the project after a few more in-person visits for the hardware. We'll probably use some sort of Python-based Pinocchio wrapper to control Baxter (unless students are learning ROS, which can be challenging to newcomers). Potential projects include pick-and-place tasks, human-robot interaction studies, and designing end effectors!
 
-(insert image from post)
+![Baxter](/assets/baxter_sim.png){: .mx-auto.d-block :}
+<small>Baxter robot in ROS2 Gazebo simulation, more updates on physical robot work soon!
 
 

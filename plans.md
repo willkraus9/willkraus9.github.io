@@ -10,7 +10,7 @@ In my current research in the REx Lab, I am working on an ongoing project with l
 (insert GIF of nadia moving)
 
 
-![Nadia](/assets/nadia_step_fail.mov){: .mx-auto.d-block :}
+![Nadia](/nadia_step_fail.gif){: .mx-auto.d-block :}
 <small>Nadia taking some steps, now needs a chiropractor
 
 

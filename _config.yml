@@ -23,7 +23,8 @@ author: Will Kraus
 navbar-links:
   Resume / CV: "/assets/Will Kraus Resume FA24.pdf"
   Portfolio: "portfolio"
-  NMC: "aboutme"
+  Ongoing Work: "plans"   
+  # Blog (NotesMathCode): "NotesMathCode"  
   
 ################
 # --- Logo --- #

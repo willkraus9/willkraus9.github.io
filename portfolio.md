@@ -21,6 +21,8 @@ Controlling the quadruped robot depends on what type of user command the robot s
 
 By using this system of mode commander and whole body controller, the LocoMan hardware and software implementation were able to manipulate small objects in narrow gaps through teleoperation as well as achieve numerous challenging tasks such as opening drawers. Work on the assignment for the course adaptation has focused on running the simulation in AWS and visualizing the robot in the Isaac Gym environment. 
 
+Want to follow along with the extra credit homework assignment I made? Here's the assignment with AWS setup tutorial, mathematical derivation for the whole body control problem, and null space projection: [Link to Assignment](/assets/24677_locoman_assignment.pdf)
+
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
 ## Networked Robotic Systems Lab at Penn State University {#NRSL}

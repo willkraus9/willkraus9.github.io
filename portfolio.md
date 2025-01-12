@@ -10,7 +10,7 @@ subtitle: Click on an image to begin.
   }
 	
   table {
-    width: 180%;
+    width: 200%;
     table-layout: fixed;
     margin: 0 auto; /* Centers the table itself */
     border-collapse: collapse;

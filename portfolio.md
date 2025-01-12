@@ -8,24 +8,28 @@ subtitle: Click on an image to begin.
   .table-container {
     text-align: center; /* Center aligns the content inside the container */
   }
+	
   table {
-    width: 200%;
+    width: 180%;
     table-layout: fixed;
     margin: 0 auto; /* Centers the table itself */
     border-collapse: collapse;
   }
+	
   th:first-child, td:first-child {
     width: 200px; /* Ensure the first column has enough space */
   }
+	
   th, td {
-    min-width: 100px; /* Prevent overly narrow columns */
-    padding: 10px;
+    min-width: 80px; /* Prevent overly narrow columns */
+    padding: 5px;
     border: 1px solid #ccc;
-    text-align: left;
+    text-align: center;
   }
+	
 </style>
 
-| Project Name | Hardware | Control Theory | Simulation | State Estimation | Planning (Motion, Path) | Embedded Systems | Cloud Computing / Data Analytics | AI/ML |
+| | Hardware | Control Theory | Simulation | State Estimation | Planning | Embedded Systems | Cloud Computing | AI |
 |--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|-------|
 | [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :}    |          | Optimal Control, Robust Control | ROS + Gazebo | EKF | | Embedded Systems | | |
 | [![MBRL](/assets/png/MBRL_link.png)](#mbrl){: .mx-auto.d-block :}        |          | | MuJoCo | | | | | Reinforcement Learning, Transformers |

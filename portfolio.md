@@ -21,27 +21,19 @@ This project works on a sim2real pipeline, in which controllers are derived in a
 
 For this project, I focused on two goals: setting up the ROS2 simulation with wind testing and the LQR derivation. I chose Gazebo as the simulation environemnt to program the drone controllers in C++ and add a 3D wind force effect based on the meshes of the drone. By testing the drone in simulation, preliminary tuning values can be found that roughly translated to hardware. Also, simulating the drone minimized hardware damage and, since the drone experienced fairly limited downwash / vorticies or other aerodynamic effects besides wind due to the focus on stabilization, the physics surrounding the drone could be effectively modelled. 
 
-(drone gif moving Gazebo) 
+![Baseline Sim](/assets/DronewithWindinGazebo-ezgif.com-video-to-gif-converter.gif){: .mx-auto.d-block :}
 <small>Wind robustness testing baseline for simulation, with teleoperated commands sent via the basic ROS2 keyboard teleoperation commands
 
 I also implemented an infinite horizon LQR controller on the quadcopter in simulation and tuned on hardware with full state feedback (x y z, roll, pitch, yaw, dx, dy, dz, droll, dpitch, dyaw). Each control action was either the overall body force on the drone or the torques along the x, y, and z axes. To lower the computational restraints, I computed the LQR gains offline and tuned them iteratively on hardware. Something interesting to note: the final gains for the hardware followed a coupling format (one computed torque was tied to several states closely), which was similar to the cascaded PID structure implemented on another controller.
 
-Final IH LQR gain on hardware: K = 10^-3 ×
+![LQR Sim](/assets/LQR_drone.gif){: .mx-auto.d-block :}
 
-$$
-\begin{pmatrix}
-0    & 0     & 70.00 & 0     & 0     & 0     & 0     & 406.9 & 0    & 0    & 0     & 0  \\
-0    & 0     & 0     & 5.62  & 0     & 0     & 0     & 0     & 0    & 0.95 & 0     & 0  \\
-0.86 & 0     & 0     & 0     & 5.65  & 0     & 1.32  & 0     & 0    & 0    & 0.95  & 0  \\  
-0    & -0.86 & 0     & 0     & 0     & 8.98  & 0     & -1.32 & 0    & 0    & 0     & 1.09
-\end{pmatrix}
-$$
 
 Overall, 3 controllers developed: a Sliding Mode Controller, a cascaded PID controller, and a LQR controller. Evaluations on the performane of the controllers was done by tracking a square shape with a robustness test of 1m/s standing wind gusts. Overall, the Sliding Mode controller had issues with chattering between the different manifolds, but the LQR controller had the best overall wind stability with adequate position accuracy (<0.5 normalized orientation error, <2 normalized position error). The PID controller, which spent the longest in tuning on hardware, achieved similar results to the LQR controller.
 	
-![Final Report](/assets/Windbreakers___ACSI_Final_Report.pdf){: .mx-auto.d-block :}
+[Final Report](/assets/Windbreakers___ACSI_Final_Report.pdf)
 
-![Final Presentation](/assets/Final_Presentation_Windbreakers){: .mx-auto.d-block :}
+[Final Presentation](/assets/Final_Presentation_Windbreakers)
 
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>

@@ -4,30 +4,8 @@ subtitle: Click on an image to begin.
 ---
 <a href="#top"> </a>
 
-<style>
-  .table-container {
-    display: flex;
-    justify-content: center; /* Center the table within the container */
-    overflow-x: auto; /* Add horizontal scrolling for small screens */
-    padding: 0 20px; /* Add padding to prevent content from being too close to edges */
-  }
-  table {
-    max-width: 150%; /* Constrain table width to the page container */
-    table-layout: fixed; /* Allow columns to adjust dynamically */
-    border-collapse: collapse;
-  }
-  th:first-child, td:first-child {
-    width: 300px; /* Provide enough space for the first column */
-  }
-  th, td {
-    min-width: 100px; /* Prevent columns from becoming too narrow */
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: left;
-  }
 
-	
-</style>
+<style> .table-container { text-align: center; /* Center aligns the content inside the container */ } table { width: 200%; table-layout: fixed; margin: 0 auto; /* Centers the table itself */ border-collapse: collapse; } th:first-child, td:first-child { width: 200px; /* Ensure the first column has enough space */ } th, td { min-width: 100px; /* Prevent overly narrow columns */ padding: 5px; border: 1px solid #ccc; text-align: center; } </style>	
 
 | | Hardware | Control | Sim | State Estimation | Planning | EE | Cloud Computing | AI |
 |--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|-------|

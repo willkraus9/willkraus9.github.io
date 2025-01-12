@@ -10,7 +10,28 @@ subtitle: Click on an image to begin.
 
 | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
 
-| [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
+| [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :} | [![MBRL](/assets/png/MBRL_link.png)](#mbrl){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
+
+## Model-based Reinforcement Learning and Transformer Architecture in a Humanoid Robot Environment {#mbrl}
+
+FOr decades, humanoid robots have been developed using model-based optimal controllers for whole-body locomanipulation tasks. However, generalizability to different tasks in uncertain or chaotic environments have been an obstacle for real-time deployment. By using parallelization in simulation, reinforcement learning seeks to not only decrease development time but also generalize the experiences of simulated robot agents across different environemnts and tasks. Through this group project, I was curious as to how reinforcement learning could be used to plan long horizon tasks and if there were any changes to make this learning problem easier. 
+
+The team used TD-MPC2, a model-based reinforcement learning paradigm, as an ideal candidate to control a multi-DOF humanoid robot. TD-MPC2 is trained on 104 control tasks across 4 different simulation worlds with a diversity of tasks and robot agents. Relevant state information is exclusively encoded, with temporal difference learning incentivizing long-horizon control tasks. One set of pre-configured hyperparameters and a freely available dataset on HuggingFace allowed the group to prototype this solution for more immediate results. 
+
+To improve on this structure, the team used a decision transformer instead of the MLP used in the sampling for the TD-MPC2 model; in this new structure, a transformer architecture takes in the sequence of past actions, past states, and rewards while the output returns likely ations for the agent. A number of features makes this method attractive, such as the attention mechanism recording past actions and states to inform future actions and conditioning the transformer to return likely actions that incentivizes an ideal reward. This would change the structure of our reinforcement learning architecture to a sequence modeling problem, but this was amended by fixing the returns for the first return, similar to horizion-based approaches. 
+
+This structure was implemented on a Unitree H1 model in MuJoCo. A hierarchical model for controlling low-level manipulation and high-level planning / control tasks was employed, with TD-MPC2 as the high-level planner. We trained the agent to complete a For training, the hands were fixed to reduce the DOFs on the model and, thus, reduce the action space of the agent. 
+
+(sitting task comparison: baseline vs ours)
+<small> speedup stats
+
+RESULTS
+
+Even though this work was done in a class project, I felt confident enough to showcase this experience as a technical presentation in a different class, which can be found here: 
+[7-minute Technical Presentation](https://docs.google.com/presentation/d/1NwuvNZYdiaAT_omsnq6JpmwmC_UJJ2AhAgJdu2lvkr4/edit?usp=sharing)
+
+[Final Paper](/assets/MBRL_humanoid.pdf){: .mx-auto.d-block :}
+[Project Repo](https://github.com/Woodwardbr/16831-project/tree/feature/hf-transformer)
 
 
 ## Quadrotor Controller Development Pipeline in Simulation and Hardware for Wind Robustness Testing {#GUST}
@@ -27,7 +48,7 @@ For this project, I focused on two goals: setting up the ROS2 simulation with wi
 I also implemented an infinite horizon LQR controller on the quadcopter in simulation and tuned on hardware with full state feedback (x y z, roll, pitch, yaw, dx, dy, dz, droll, dpitch, dyaw). Each control action was either the overall body force on the drone or the torques along the x, y, and z axes. To lower the computational restraints, I computed the LQR gains offline and tuned them iteratively on hardware. Something interesting to note: the final gains for the hardware followed a coupling format (one computed torque was tied to several states closely), which was similar to the cascaded PID structure implemented on another controller.
 
 ![LQR Sim](/assets/LQR_drone.gif){: .mx-auto.d-block :}
-
+<small> LQR controller in C++ in ROS2 Gazebo simulation. The goal state was 1 meter above the ground plane and was not tuned to test baseline functionality in this demo. 
 
 Overall, 3 controllers developed: a Sliding Mode Controller, a cascaded PID controller, and a LQR controller. Evaluations on the performane of the controllers was done by tracking a square shape with a robustness test of 1m/s standing wind gusts. Overall, the Sliding Mode controller had issues with chattering between the different manifolds, but the LQR controller had the best overall wind stability with adequate position accuracy (<0.5 normalized orientation error, <2 normalized position error). The PID controller, which spent the longest in tuning on hardware, achieved similar results to the LQR controller.
 	

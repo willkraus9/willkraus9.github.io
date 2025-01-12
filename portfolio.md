@@ -6,26 +6,27 @@ subtitle: Click on an image to begin.
 
 <style>
   .table-container {
-    text-align: center; /* Center aligns the content inside the container */
+    display: flex;
+    justify-content: center; /* Center the table within the container */
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+    padding: 0 20px; /* Add padding to prevent content from being too close to edges */
   }
-	
   table {
-    width: 200%;
-    table-layout: fixed;
-    margin: 0 auto; /* Centers the table itself */
+    max-width: 100%; /* Constrain table width to the page container */
+    table-layout: auto; /* Allow columns to adjust dynamically */
+    margin: 0 auto; /* Center the table */
     border-collapse: collapse;
   }
-	
   th:first-child, td:first-child {
-    width: 200px; /* Ensure the first column has enough space */
+    width: 200px; /* Provide enough space for the first column */
   }
-	
   th, td {
-    min-width: 100px; /* Prevent overly narrow columns */
-    padding: 5px;
+    min-width: 100px; /* Prevent columns from becoming too narrow */
+    padding: 10px;
     border: 1px solid #ccc;
-    text-align: center;
+    text-align: left;
   }
+
 	
 </style>
 

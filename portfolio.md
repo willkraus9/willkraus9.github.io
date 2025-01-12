@@ -5,9 +5,14 @@ subtitle: Click on an image to begin.
 <a href="#top"> </a>
 
 <style>
+  .table-container {
+    text-align: center; /* Center aligns the content inside the container */
+  }
   table {
     width: 200%;
     table-layout: fixed;
+    margin: 0 auto; /* Centers the table itself */
+    border-collapse: collapse;
   }
   th:first-child, td:first-child {
     width: 200px; /* Ensure the first column has enough space */
@@ -15,10 +20,10 @@ subtitle: Click on an image to begin.
   th, td {
     min-width: 100px; /* Prevent overly narrow columns */
     padding: 10px;
+    border: 1px solid #ccc;
     text-align: left;
   }
 </style>
-
 
 | Project Name | Hardware | Control Theory | Simulation | State Estimation | Planning (Motion, Path) | Embedded Systems | Cloud Computing / Data Analytics | AI/ML |
 |--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|-------|

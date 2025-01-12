@@ -7,18 +7,18 @@ subtitle: Click on an image to begin.
 
 <style> .table-container { text-align: center; /* Center aligns the content inside the container */ } table { width: 200%; table-layout: fixed; margin: 0 auto; /* Centers the table itself */ border-collapse: collapse; } th:first-child, td:first-child { width: 200px; /* Ensure the first column has enough space */ } th, td { min-width: 100px; /* Prevent overly narrow columns */ padding: 5px; border: 1px solid #ccc; text-align: center; } </style>	
 
-| | Hardware | Control | Sim | State Estimation | Planning | EE | Cloud Computing | AI |
-|--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|-------|
-| [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :}    |          | Optimal Control, Robust Control | ROS + Gazebo | EKF | | Embedded Systems | | |
-| [![MBRL](/assets/png/MBRL_link.png)](#mbrl){: .mx-auto.d-block :}        |          | | MuJoCo | | | | | Reinforcement Learning, Transformers |
-| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :}       | Manufacturing, Design | Optimal Control, SysID | | Luenberger Observers | | I2C, CAN, BLDC Motor Drivers | | |
-| [![LocoMan](/assets/png/locoman_link.png)](#locoman){: .mx-auto.d-block :}       | | Whole Body Control, Teleop | Isaac Gym | | | | Cloud Computing (AWS) | |
-| [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :}           | | Optimal Control | Webots, ROS + Gazebo | EKF | A*, SLAM | | | |
-| [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :}     | Manufacturing, Design | Teleop | ROS + Gazebo | | | | | |
-| [![KCF](/assets/png/kcf_link.png)](#KCF){: .mx-auto.d-block :}           | Predictive Maintenance | | | | | Sensor Data Collection | Data Analytics | |
-| [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :}    | Manufacturing, Gearboxes, Design | | | | | BLDC Motor Drivers | | |
-| [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :}     | | | | | Computer Vision | | Data Analytics | |
-| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :}          | Manufacturing, Design | | | | A* | | | |
+| | Hardware | Control | Sim | State Estimation | Planning | EE | Data /  AI |
+|--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|
+| [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :}    |          | Optimal Control, Robust Control | ROS + Gazebo | EKF | | Embedded Systems | | 
+| [![MBRL](/assets/png/MBRL_link.png)](#mbrl){: .mx-auto.d-block :}        |          | | MuJoCo | | | | Reinforcement Learning, Transformers |
+| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :}       | Manufacturing, Design | Optimal Control, SysID | | Luenberger Observers | | I2C, CAN, BLDC Motor Drivers | | 
+| [![LocoMan](/assets/png/locoman_link.png)](#locoman){: .mx-auto.d-block :}       | | Whole Body Control, Teleop | Isaac Gym | | | | Cloud Computing (AWS) | 
+| [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :}           | | Optimal Control | Webots, ROS + Gazebo | EKF | A*, SLAM | | | 
+| [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :}     | Manufacturing, Design | Teleop | ROS + Gazebo | | | | | 
+| [![KCF](/assets/png/kcf_link.png)](#KCF){: .mx-auto.d-block :}           | Predictive Maintenance | | | | | Sensor Data Collection | Data Analytics | 
+| [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :}    | Manufacturing, Gearboxes, Design | | | | | BLDC Motor Drivers | | 
+| [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :}     | | | | | Computer Vision | | Data Analytics | 
+| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :}          | Manufacturing, Design | | | | A* | | | 
 
 ## Model-based Reinforcement Learning and Transformer Architecture in a Humanoid Robot Environment {#mbrl}
 

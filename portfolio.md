@@ -14,18 +14,23 @@ subtitle: Click on an image to begin.
 
 ## Model-based Reinforcement Learning and Transformer Architecture in a Humanoid Robot Environment {#mbrl}
 
-FOr decades, humanoid robots have been developed using model-based optimal controllers for whole-body locomanipulation tasks. However, generalizability to different tasks in uncertain or chaotic environments have been an obstacle for real-time deployment. By using parallelization in simulation, reinforcement learning seeks to not only decrease development time but also generalize the experiences of simulated robot agents across different environemnts and tasks. Through this group project, I was curious as to how reinforcement learning could be used to plan long horizon tasks and if there were any changes to make this learning problem easier. 
+For decades, humanoid robots have been developed using model-based optimal controllers for whole-body locomanipulation tasks. However, generalizability to different tasks in uncertain or chaotic environments have been an obstacle for real-time deployment. By using parallelization in simulation, reinforcement learning seeks to not only decrease development time but also generalize the experiences of simulated robot agents across different environemnts and tasks. Through this group project, I was curious as to how reinforcement learning could be used to plan long horizon tasks and if there were any changes to make this learning problem easier. 
 
 The team used TD-MPC2, a model-based reinforcement learning paradigm, as an ideal candidate to control a multi-DOF humanoid robot. TD-MPC2 is trained on 104 control tasks across 4 different simulation worlds with a diversity of tasks and robot agents. Relevant state information is exclusively encoded, with temporal difference learning incentivizing long-horizon control tasks. One set of pre-configured hyperparameters and a freely available dataset on HuggingFace allowed the group to prototype this solution for more immediate results. 
 
 To improve on this structure, the team used a decision transformer instead of the MLP used in the sampling for the TD-MPC2 model; in this new structure, a transformer architecture takes in the sequence of past actions, past states, and rewards while the output returns likely ations for the agent. A number of features makes this method attractive, such as the attention mechanism recording past actions and states to inform future actions and conditioning the transformer to return likely actions that incentivizes an ideal reward. This would change the structure of our reinforcement learning architecture to a sequence modeling problem, but this was amended by fixing the returns for the first return, similar to horizion-based approaches. 
 
-This structure was implemented on a Unitree H1 model in MuJoCo. A hierarchical model for controlling low-level manipulation and high-level planning / control tasks was employed, with TD-MPC2 as the high-level planner. We trained the agent to complete a For training, the hands were fixed to reduce the DOFs on the model and, thus, reduce the action space of the agent. 
+This structure was implemented on a Unitree H1 model in MuJoCo using the HumanoidBench testing environment. A hierarchical model for controlling low-level manipulation and high-level planning / control tasks was employed, with TD-MPC2 as the high-level planner. We trained the agent to complete a For training, the hands were fixed to reduce the DOFs on the model and, thus, reduce the action space of the agent. 
 
-(sitting task comparison: baseline vs ours)
-<small> speedup stats
+From the HumanoidBench paper, the rewards for this task are as follows: 
+[![rew](/assets/MBRL_rew.png)]
 
-RESULTS
+
+![goal](/assets/MBRL_ex.png)]{: .mx-auto.d-block :} | [![theirs](/assets/MBRL_base.gif)]{: .mx-auto.d-block :} | [![ours](/assets/MBRL_improved.gif)]{: .mx-auto.d-block :} |
+<small> A comparison between the goal (left), the baseline (center), and the improved (right) implementations.
+
+(results + graph)
+
 
 Even though this work was done in a class project, I felt confident enough to showcase this experience as a technical presentation in a different class, which can be found here: 
 [7-minute Technical Presentation](https://docs.google.com/presentation/d/1NwuvNZYdiaAT_omsnq6JpmwmC_UJJ2AhAgJdu2lvkr4/edit?usp=sharing)

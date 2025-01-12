@@ -19,12 +19,14 @@ For decades, humanoid robots have been developed using model-based optimal contr
 The team used TD-MPC2, a model-based reinforcement learning paradigm, as an ideal candidate to control a multi-DOF humanoid robot. TD-MPC2 is trained on 104 control tasks across 4 different simulation worlds with a diversity of tasks and robot agents. Relevant state information is exclusively encoded, with temporal difference learning incentivizing long-horizon control tasks. One set of pre-configured hyperparameters and a freely available dataset on HuggingFace allowed the group to prototype this solution for more immediate results. 
 
 ![TDMPC2](/assets/TDMPC2.png){: .mx-auto.d-block :}
+<small> TD-MPC2 outline diagram. In this example, a musculoskeletal canine is simulated and controlled via TD-MPC2; due to the complex coupling and control outputs, this task would have been complicated at best for model-based methods.
 
 To improve on this structure, the team used a decision transformer instead of the MLP used in the sampling for the TD-MPC2 model; in this new structure, a transformer architecture takes in the sequence of past actions, past states, and rewards while the output returns likely ations for the agent. A number of features makes this method attractive, such as the attention mechanism recording past actions and states to inform future actions and conditioning the transformer to return likely actions that incentivizes an ideal reward. This would change the structure of our reinforcement learning architecture to a sequence modeling problem, but this was amended by fixing the returns for the first return, similar to horizion-based approaches. 
 
 This structure was implemented on a Unitree H1 model in MuJoCo using the HumanoidBench testing environment. A hierarchical model for controlling low-level manipulation and high-level planning / control tasks was employed, with TD-MPC2 as the high-level planner. We trained the agent for 1 million training steps to sit in a chair, which is a complex task due to the contact dynamics and proprioception involved for a typical optimal control struture. To reduce training time, the hands were fixed to reduce the DOFs on the model and, thus, reduce the action space of the agent. 
 
-[![goal](/assets/MBRL_ex.png)]{: .mx-auto.d-block :} | [![theirs](/assets/MBRL_base.gif)]{: .mx-auto.d-block :} | [![ours](/assets/MBRL_improved.gif)]{: .mx-auto.d-block :}|
+[![goal](/assets/MBRL_ex.png)] | [![theirs](/assets/MBRL_base.gif)] | [![ours](/assets/MBRL_improved.gif)] |
+
 <small> A comparison between the goal (left), the baseline (center), and the improved (right) implementations.
 
 The results of this experiment are promising: a trained transformer model was able to have a reduction in training time by 25% for relatively the same level of rewards for the sitting task. Also, the movements that the transformer-based architecture creates are much smoother, which can reduce the wear in joints on hardware and lead to motions that display better filtered results via local PD controllers.

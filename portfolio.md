@@ -21,7 +21,7 @@ subtitle: Click on an image to begin.
   }
 	
   th, td {
-    min-width: 80px; /* Prevent overly narrow columns */
+    min-width: 100px; /* Prevent overly narrow columns */
     padding: 5px;
     border: 1px solid #ccc;
     text-align: center;
@@ -29,7 +29,7 @@ subtitle: Click on an image to begin.
 	
 </style>
 
-| | Hardware | Control Theory | Simulation | State Estimation | Planning | Embedded Systems | Cloud Computing | AI |
+| | Hardware | Control | Sim | State Estimation | Planning | EE | Cloud Computing | AI |
 |--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|-------|
 | [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :}    |          | Optimal Control, Robust Control | ROS + Gazebo | EKF | | Embedded Systems | | |
 | [![MBRL](/assets/png/MBRL_link.png)](#mbrl){: .mx-auto.d-block :}        |          | | MuJoCo | | | | | Reinforcement Learning, Transformers |

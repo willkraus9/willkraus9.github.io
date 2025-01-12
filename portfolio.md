@@ -4,6 +4,8 @@ subtitle: Click on an image to begin.
 ---
 <a href="#top"> </a>
 
+<div align="center">
+
 | Project Name | Hardware | Control Theory | Simulation | State Estimation | Planning (Motion, Path) | Embedded Systems | Cloud Computing / Data Analytics | AI/ML |
 |--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|-------|
 | [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :}    |          | Optimal Control, Robust Control | ROS + Gazebo | EKF | | Embedded Systems | | |
@@ -16,6 +18,8 @@ subtitle: Click on an image to begin.
 | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :}    | Manufacturing, Gearboxes, Design | | | | | BLDC Motor Drivers | | |
 | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :}     | | | | | Computer Vision | | Data Analytics | |
 | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :}          | Manufacturing, Design | | | | A* | | | |
+
+</div>
 
 ## Model-based Reinforcement Learning and Transformer Architecture in a Humanoid Robot Environment {#mbrl}
 

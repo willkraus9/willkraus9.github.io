@@ -12,13 +12,12 @@ subtitle: Click on an image to begin.
     padding: 0 20px; /* Add padding to prevent content from being too close to edges */
   }
   table {
-    max-width: 100%; /* Constrain table width to the page container */
-    table-layout: auto; /* Allow columns to adjust dynamically */
-    margin: 0 auto; /* Center the table */
+    max-width: 150%; /* Constrain table width to the page container */
+    table-layout: fixed; /* Allow columns to adjust dynamically */
     border-collapse: collapse;
   }
   th:first-child, td:first-child {
-    width: 200px; /* Provide enough space for the first column */
+    width: 300px; /* Provide enough space for the first column */
   }
   th, td {
     min-width: 100px; /* Prevent columns from becoming too narrow */

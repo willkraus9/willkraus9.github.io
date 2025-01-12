@@ -4,13 +4,18 @@ subtitle: Click on an image to begin.
 ---
 <a href="#top"> </a>
 
-| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :} | [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :} | [![LocoMan](/assets/png/locoman_link.png)](#locoman){: .mx-auto.d-block :} 
-
-| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :} | [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :} |  [![KCF](/assets/png/kcf_link.png)](#KCF){: .mx-auto.d-block :} 
-
-| [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :} | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
-
-| [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :} | [![MBRL](/assets/png/MBRL_link.png)](#mbrl){: .mx-auto.d-block :} | [![ACRP](/assets/png/acrp_link.png)](#ACRP){: .mx-auto.d-block :}
+| Project Name | Hardware | Control Theory | Simulation | State Estimation | Planning (Motion, Path) | Embedded Systems | Cloud Computing / Data Analytics | AI/ML |
+|--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|-------|
+| [![GustGuru](/assets/gustguru_link.png)](#GUST){: .mx-auto.d-block :}    |          | Optimal Control, Robust Control | ROS + Gazebo | EKF | | Embedded Systems | | |
+| [![MBRL](/assets/png/MBRL_link.png)](#mbrl){: .mx-auto.d-block :}        |          | | MuJoCo | | | | | Reinforcement Learning, Transformers |
+| [![FlexSat](/assets/png/flexsat_link.png)](#FlexSat){: .mx-auto.d-block :}       | Manufacturing, Design | Optimal Control, SysID | | Luenberger Observers | | I2C, CAN, BLDC Motor Drivers | | |
+| [![LocoMan](/assets/png/locoman_link.png)](#locoman){: .mx-auto.d-block :}       | | Whole Body Control, Teleop | Isaac Gym | | | | Cloud Computing (AWS) | |
+| [![MCT](/assets/png/mct_link.png)](#MCT){: .mx-auto.d-block :}           | | Optimal Control | Webots, ROS + Gazebo | EKF | A*, SLAM | | | |
+| [![THON](/assets/png/thon_bot_link2.png)](#THON){: .mx-auto.d-block :}     | Manufacturing, Design | Teleop | ROS + Gazebo | | | | | |
+| [![KCF](/assets/png/kcf_link.png)](#KCF){: .mx-auto.d-block :}           | Predictive Maintenance | | | | | Sensor Data Collection | Data Analytics | |
+| [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :}    | Manufacturing, Gearboxes, Design | | | | | BLDC Motor Drivers | | |
+| [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :}     | | | | | Computer Vision | | Data Analytics | |
+| [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :}          | Manufacturing, Design | | | | A* | | | |
 
 ## Model-based Reinforcement Learning and Transformer Architecture in a Humanoid Robot Environment {#mbrl}
 
@@ -26,7 +31,6 @@ To improve on this structure, the team used a decision transformer instead of th
 This structure was implemented on a Unitree H1 model in MuJoCo using the HumanoidBench testing environment. A hierarchical model for controlling low-level manipulation and high-level planning / control tasks was employed, with TD-MPC2 as the high-level planner. We trained the agent for 1 million training steps to sit in a chair, which is a complex task due to the contact dynamics and proprioception involved for a typical optimal control struture. To reduce training time, the hands were fixed to reduce the DOFs on the model and, thus, reduce the action space of the agent. 
 
 ![goal](/assets/MBRL_ex.png) | ![theirs](/assets/MBRL_base.gif) | ![ours](/assets/MBRL_improved.gif) |
-
 <small> A comparison between the goal (left), the baseline (center), and the improved (right) implementations.
 
 The results of this experiment are promising: a trained transformer model was able to have a reduction in training time by 25% for relatively the same level of rewards for the sitting task. Also, the movements that the transformer-based architecture creates are much smoother, which can reduce the wear in joints on hardware and lead to motions that display better filtered results via local PD controllers.
@@ -162,16 +166,6 @@ In the future, THON Bot has a variety of uses outside of the THON dance marathon
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
-## Tony Pi Humanoid Robot Projects {#tonypi}
-During my senior year, I had the opportunity to enroll in a humanoid robotics class at Penn State. Because of the freeform nature of the course, I learned a variety of software related to developing code for a TonyPi humanoid robot. Code was written in Python and sent to an onboard Raspberry Pi to make the robot perform a variety of tasks such as dancing, performing exercises, and stacking wooden blocks. As part of the course, I performed a stability analysis based on accelerometer and pressure data to determine which movements were more stable than others and what factors play into stable bipedal motion.
-
-[Link to Dance](/assets/mov/TonyPi_Dance.mp4)
-
-The class also taught OpenCV fundamentals using the robot's onboard camera system. For one of my projects, I tuned a PID controller to control the servo motors on the camera to track the centermost face.
-
-[Link to Tracking Script](/assets/mov/TonyPi_Track.mp4)
-
-<a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
 ## Drumstick: Testing Quadruped Leg Principles {#DRUM}
 To prepare for graduate school, I decided to construct a quadruped leg in my free time over the summer using off-the-shelf components and 3D printed parts. The design of the leg is loosely based on projects from the Open Dynamics Robot Initiative (https://open-dynamic-robot-initiative.github.io), but I replaced the pancake motors with drone motors I already had with a 100:1 gearbox for increased torque. Also, the knee linear actuator common across different quadruped designs has been replaced with a motor directly attached to the joint for ease of use.
@@ -196,16 +190,4 @@ Overall, the project was chosen for Best Project Award out of nearly one hundred
 [Link to Video](https://www.youtube.com/watch?v=jhPUywB5TlE)
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
-
-## Airport Cooperative Research Project (ACRP) Design Challenge {#ACRP}
-The Airport Cooperative Research Program is a national competition for university students and was a component of one of my classes in the Engineering Leadership Development minor program. The competition tasked students with improving one aspect of an airport terminal and operations in a thoughtful and well-researched way; everything was to be submitted in a final report for industry experts and judges.  
-
-Our group decided to investigate an aspect of an airport that we could directly study and improve: the terminal experience for elderly passengers. Through family interviews, field research at a local airport, and copious research on the elderly population in America, we decided to create a Bluetooth-based device that directs passengers to bathrooms, food courts, gates, and other services. Because of our efforts, we were awarded 2nd Place nationally in the Airport Management and Planning category.
-
-<a href="#top" class="btn btn-primary">Back to Project Selection</a>
-
-[Link to Video](https://www.youtube.com/watch?v=CzLzuzDaduI) 
-
-[Link to Report](/assets/ACRP_report.pdf)
-
 

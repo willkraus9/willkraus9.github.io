@@ -6,9 +6,8 @@ subtitle: Click on an image to begin.
 
 <style>
   table {
-    width: 150%;
-    table-layout: auto;
-    border-collapse: collapse;
+    width: 200%;
+    table-layout: fixed;
   }
   th:first-child, td:first-child {
     width: 200px; /* Ensure the first column has enough space */

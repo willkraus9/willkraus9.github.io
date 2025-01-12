@@ -4,7 +4,16 @@ subtitle: Click on an image to begin.
 ---
 <a href="#top"> </a>
 
-<div align="center">
+<style>
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  th:first-child, td:first-child {
+    width: 200px; /* Adjust width as needed */
+  }
+</style>
+
 
 | Project Name | Hardware | Control Theory | Simulation | State Estimation | Planning (Motion, Path) | Embedded Systems | Cloud Computing / Data Analytics | AI/ML |
 |--------------|----------|----------------|------------|------------------|------------------------|------------------|--------------------------------|-------|
@@ -18,8 +27,6 @@ subtitle: Click on an image to begin.
 | [![Drumstick](/assets/png/drumstick_link.png)](#DRUM){: .mx-auto.d-block :}    | Manufacturing, Gearboxes, Design | | | | | BLDC Motor Drivers | | |
 | [![AstaZero](/assets/png/astazero_link.png)](#drone){: .mx-auto.d-block :}     | | | | | Computer Vision | | Data Analytics | |
 | [![NRSL](/assets/png/nrsl_link.png)](#NRSL){: .mx-auto.d-block :}          | Manufacturing, Design | | | | A* | | | |
-
-</div>
 
 ## Model-based Reinforcement Learning and Transformer Architecture in a Humanoid Robot Environment {#mbrl}
 

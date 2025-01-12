@@ -6,11 +6,17 @@ subtitle: Click on an image to begin.
 
 <style>
   table {
-    width: 100%;
-    table-layout: fixed;
+    width: 150%;
+    table-layout: auto;
+    border-collapse: collapse;
   }
   th:first-child, td:first-child {
-    width: 200px; /* Adjust width as needed */
+    width: 200px; /* Ensure the first column has enough space */
+  }
+  th, td {
+    min-width: 100px; /* Prevent overly narrow columns */
+    padding: 10px;
+    text-align: left;
   }
 </style>
 
@@ -42,6 +48,8 @@ To improve on this structure, the team used a decision transformer instead of th
 This structure was implemented on a Unitree H1 model in MuJoCo using the HumanoidBench testing environment. A hierarchical model for controlling low-level manipulation and high-level planning / control tasks was employed, with TD-MPC2 as the high-level planner. We trained the agent for 1 million training steps to sit in a chair, which is a complex task due to the contact dynamics and proprioception involved for a typical optimal control struture. To reduce training time, the hands were fixed to reduce the DOFs on the model and, thus, reduce the action space of the agent. 
 
 ![goal](/assets/MBRL_ex.png) | ![theirs](/assets/MBRL_base.gif) | ![ours](/assets/MBRL_improved.gif) |
+
+
 <small> A comparison between the goal (left), the baseline (center), and the improved (right) implementations.
 
 The results of this experiment are promising: a trained transformer model was able to have a reduction in training time by 25% for relatively the same level of rewards for the sitting task. Also, the movements that the transformer-based architecture creates are much smoother, which can reduce the wear in joints on hardware and lead to motions that display better filtered results via local PD controllers.

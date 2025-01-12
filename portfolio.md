@@ -23,10 +23,13 @@ To improve on this structure, the team used a decision transformer instead of th
 This structure was implemented on a Unitree H1 model in MuJoCo using the HumanoidBench testing environment. A hierarchical model for controlling low-level manipulation and high-level planning / control tasks was employed, with TD-MPC2 as the high-level planner. We trained the agent to complete a For training, the hands were fixed to reduce the DOFs on the model and, thus, reduce the action space of the agent. 
 
 From the HumanoidBench paper, the rewards for this task are as follows: 
-[![rew](/assets/MBRL_rew.png)]
+
+![rew](/assets/MBRL_rew.png)
 
 
-![goal](/assets/MBRL_ex.png)]{: .mx-auto.d-block :} | [![theirs](/assets/MBRL_base.gif)]{: .mx-auto.d-block :} | [![ours](/assets/MBRL_improved.gif)]{: .mx-auto.d-block :} |
+![goal](/assets/MBRL_ex.png)] | [![theirs](/assets/MBRL_base.gif)]| [![ours](/assets/MBRL_improved.gif)]|
+
+
 <small> A comparison between the goal (left), the baseline (center), and the improved (right) implementations.
 
 (results + graph)

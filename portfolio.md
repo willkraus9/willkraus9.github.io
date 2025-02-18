@@ -70,6 +70,7 @@ Even though this work was done in a class project, I felt confident enough to sh
 [Final Paper](/assets/MBRL_humanoid.pdf){: .mx-auto.d-block :}
 [Project Repo](https://github.com/Woodwardbr/16831-project/tree/feature/hf-transformer)
 
+<a href="#top" class="btn btn-primary">Back to Project Selection</a>
 
 ## Quadrotor Controller Development Pipeline in Simulation and Hardware for Wind Robustness Testing {#GUST}
 
@@ -189,7 +190,6 @@ As the founder of the project, I divided the project into 3 teams: Hardware, Ele
 In the future, THON Bot has a variety of uses outside of the THON dance marathon. The project has functions and hardware that would benefit Human-Robot Interaction research or answer ethical questions about the nature of robots in society.
 
 <a href="#top" class="btn btn-primary">Back to Project Selection</a>
-
 
 ## Drumstick: Testing Quadruped Leg Principles {#DRUM}
 To prepare for graduate school, I decided to construct a quadruped leg in my free time over the summer using off-the-shelf components and 3D printed parts. The design of the leg is loosely based on projects from the Open Dynamics Robot Initiative (https://open-dynamic-robot-initiative.github.io), but I replaced the pancake motors with drone motors I already had with a 100:1 gearbox for increased torque. Also, the knee linear actuator common across different quadruped designs has been replaced with a motor directly attached to the joint for ease of use.
